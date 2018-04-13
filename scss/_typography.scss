@@ -1,0 +1,37 @@
+// typography
+
+// Content:
+// font-face
+
+
+
+// font-face
+@font-face {
+  font-family: 'mytupi';
+  src: url('../font/mytupi.eot?#iefix') format('embedded-opentype'),
+       url('../font/mytupi.ttf')  format('truetype'),
+       url('../font/mytupi.woff') format('woff');
+}
+@font-face {
+  font-family: 'mytupibold';
+  src: url('../font/mytupibold.eot?#iefix') format('embedded-opentype'),
+       url('../font/mytupibold.ttf')  format('truetype'),
+       url('../font/mytupibold.woff') format('woff');
+}
+
+$font-stack-regular: 'mytupi', Helvetica, Arial, sans-serif;
+$font-stack-bold: 'mytupibold', Helvetica, Arial, sans-serif;
+
+%font-stack-regular {
+  font-family:$font-stack-regular;
+}
+%font-stack-bold {
+  font-family:$font-stack-bold;
+}
+
+body{
+  font-family:$font-stack-regular;
+  background-color:$bg;
+  color:$white;
+  font-size:1rem;
+}
