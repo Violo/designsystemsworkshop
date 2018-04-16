@@ -1,3 +1,36 @@
 // tools
 
 // Content:
+// - clearing
+
+
+
+// clearing
+.m-clear_fix {
+  &:before,
+  &:after {
+    content:"";
+    display:block;
+    overflow:hidden;
+  }
+  &:after {
+    clear:both;
+  }
+}
+.m-clear_floats{
+    display:block;
+    clear:both;
+    background:transparent;
+    height:0;
+    border:0;
+    overflow:hidden;
+    font-size:0.01em;
+    margin:0;
+    padding:0;
+    &.lt-ie8{
+        border:1px solid transparent;
+    }
+}
+.m-clear{
+    clear:both;
+}

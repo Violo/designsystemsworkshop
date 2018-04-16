@@ -2,6 +2,8 @@
 
 // Content:
 // font-face
+// body
+// a: behavior
 
 
 
@@ -29,9 +31,29 @@ $font-stack-bold: 'mytupibold', Helvetica, Arial, sans-serif;
   font-family:$font-stack-bold;
 }
 
+
+
+// body
 body{
-  font-family:$font-stack-regular;
+  font-family:'Roboto', Helvetica, Arial, sans-serif;
+  font-weight:400;
   background-color:$bg;
   color:$white;
   font-size:1rem;
+  strong{
+    font-weight:700;
+  }
+}
+
+
+
+// a: behavior
+a:link,
+a:visited {
+  @include transition(.25s);
+  text-decoration:none;
+  &:hover,
+  &:active {
+    text-decoration:none;
+  }
 }

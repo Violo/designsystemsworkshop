@@ -4,44 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" class="rel">
     <title>Design System Workshop - with Alla Kholmatova</title>
 </head>
 <body>
-    <header class="header">
+    <header class="main_header">
         <div class="content_wrapper">
-            <img src="img/logo.svg" alt="logo" class="logo">
-            Bologna, October 10th 2018
-            <ul>
+            <a href="#tickets" class="main_header__link_tickets">Tickets</a>
+            <ul class="main_header__list_area">
                 <li><a href="#allakholmatova">Alla Kholmatova</a></li>
                 <li><a href="#workshop">Workshop</a></li>
                 <li><a href="#location">Location</a></li>
-                <li><a href="#tickets">Tickets</a></li>
             </ul>
+            <img src="img/logo.svg" alt="logo" class="logo_evento">
+            <p class="main_header__date">Bologna, October 10th 2018</p>
         </div>
     </header>
-    <section class="content">
-        <article class="block_alla_kholmatova">
-            <a name="allakholmatova"></a>
-            Content
-        </article>
+    <section class="main_content">
+        <div class="content_wrapper">
+            <article class="block_alla_kholmatova">
+                <a name="allakholmatova"></a>
+                <div class="block_alla_kholmatova__info">
+                    <p class="block_alla_kholmatova__info__logos">
+                        <a href="http://www.ideato.it/"><img src="img/logo-ideato.svg" alt="ideato" class="block_alla_kholmatova__info__logos__ide" /></a>
+                        <a href="http://www.extrategy.it/"><img src="img/logo-extrategy.svg" alt="extrategy" class="block_alla_kholmatova__info__logos__ex" /></a>
+                    </p>
+                    <p class="block_alla_kholmatova__info__text">first time in Italy</p>
+                    <h1 class="block_alla_kholmatova__info__title">Design Systems <span>Workshop<span></h1>
+                    <p class="block_alla_kholmatova__info__name">with Alla Kholmatova</p>
+                    <a href="#tickets" class="block_alla_kholmatova__info__cta">Buy Tickets</a>
+                </div>
+                <figure class="block_alla_kholmatova__picture">
+                    <img src="img/Alla-Kholmatova.png" alt="" />
+                </figure>
+            </article>
+        </div>
     </section>
-    <footer class="footer">
-        <p>This event is organized by</p>
-        <ul>
-            <li>
-                <a href="http://www.ideato.it/">
-                    <img src="img/logo-ideato.svg" alt="ideato" />
-                </a>
-            </li>
-            <li>
-                <a href="http://www.extrategy.it/">
-                    <img src="img/logo-extrategy.svg" alt="extrategy" />
-                </a>
-            </li>
-        </ul>
-        <p><a href="">Privacy Policy</a></p>
+    <footer class="main_footer">
+        <div class="content_wrapper">
+            <p class="main_footer__organization">This event is organized by</p>
+            <ul class="main_footer__organization_company">
+                <li>
+                    <a href="http://www.ideato.it/">
+                        <img src="img/logo-ideato.svg" alt="ideato" />
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.extrategy.it/">
+                        <img src="img/logo-extrategy.svg" alt="extrategy" />
+                    </a>
+                </li>
+            </ul>
+            <p class="main_footer__policy"><a href="">Privacy Policy</a></p>
+        </div>
     </footer>
 </body>
 </html>

@@ -2,12 +2,25 @@
 
 // Content:
 // - Variables
+// - Mixin
 // - Partials
 
 
 
 // Variables
+$gutter:40px;
+$content_wrapper_width: 1366px;
+$header-height:75px;
 
+
+
+// Mixin
+@mixin transition($valuetransition){
+    transition:$valuetransition;
+    -webkit-transition:$valuetransition;
+    -o-transition:$valuetransition;
+    -moz-transition:$valuetransition;
+}
 
 
 
