@@ -50,7 +50,8 @@ body{
 
 // a: behavior
 a:link,
-a:visited {
+a:visited,
+button{
   @include transition(.25s);
   text-decoration:none;
   &:hover,

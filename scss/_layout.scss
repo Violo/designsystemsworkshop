@@ -8,7 +8,8 @@
 // - main_footer
 // - block_alla_kholmatova
 // - block_alla_kholmatova_book
-// - block_alla_kholmatova_workshop
+// - block_workshop
+// - block_tickets
 
 
 
@@ -225,8 +226,8 @@
 
 
 
-// block_alla_kholmatova_workshop
-.block_alla_kholmatova_workshop{
+// block_workshop
+.block_workshop{
     background:$bg2 url('../img/separator.svg') repeat-x 0 35px;
     color:$text;
     font-size:1.125rem;
@@ -238,3 +239,51 @@
     }
 }
 
+
+
+// block_tickets
+.block_tickets{
+    background:$white url('../img/separator.svg') repeat-x 0 35px;
+    color:$text;
+    font-size:1.125rem;
+    padding:85px 35px 35px 35px;
+    .block_tickets__eventbrite_badge{
+        width:100%;
+        margin:30px 0 0 0;
+        text-align:left;
+    }
+    .block_tickets__subscribe_form{
+        margin-top:50px;
+        .block_tickets__subscribe_form__title{
+            font-size:1.5rem;
+            text-transform:uppercase;
+            text-align:center;
+            font-weight:normal;
+        }
+        .block_tickets__subscribe_form__text{
+            text-align:center;
+            margin-bottom:35px;
+            font-size:0.9375rem;
+        }
+        fieldset{
+            margin:0;
+            padding:0 0 0 0;
+            border:none;
+            text-align:center;
+            input{
+                @extend .input_style1;
+                display:block;
+                margin:auto;
+                width:400px;
+            }
+            button{
+                @extend .button_style2;
+                display:block;
+                height:36px;
+                width:190px;
+                font-size:0.9375rem;
+                margin-top:25px;
+            }
+        }
+    }
+}
