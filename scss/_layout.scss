@@ -345,6 +345,14 @@
         width:100%;
         margin:30px 0 0 0;
         text-align:left;
+        iframe{
+            @include tablet{
+                height:390px;
+            }
+            @include smartphone{
+                height:425px;
+            }
+        }
     }
     .block_tickets__subscribe_form{
         margin-top:50px;
