@@ -40,6 +40,10 @@
         padding-left:$gutter;
         padding-right:$gutter;
         position:relative;
+        @include smartphone{
+            padding-left:$gutter_mobile;
+            padding-right:$gutter_mobile;
+        }
     }
     .logo_evento{
         margin-top:12px;
@@ -61,6 +65,10 @@
         margin:21px 0 0 0;
         padding:0;
         text-align:center;
+        @include smartphone{
+            left:240px + $gutter_mobile;
+            right:240px + $gutter_mobile;
+        }
         li{
             display:inline-block;
             font-size:0.9375rem;
@@ -85,6 +93,9 @@
         width:120px;
         margin-top:15px;
         padding-top:4px;
+        @include smartphone{
+            width:80px;
+        }
     }
 }
 
@@ -96,6 +107,10 @@
     .content_wrapper{
         padding-left:$gutter;
         padding-right:$gutter;
+        @include smartphone{
+            padding-left:$gutter_mobile;
+            padding-right:$gutter_mobile;
+        }
     }
 }
 
@@ -106,6 +121,10 @@
     .content_wrapper{
         padding-left:$gutter;
         padding-right:$gutter;
+        @include smartphone{
+            padding-left:$gutter_mobile;
+            padding-right:$gutter_mobile;
+        }
     }
     .main_footer__organization{
         font-weight:100;
@@ -156,7 +175,16 @@
         width:65%;
         float:left;
         margin:0;
-        padding:20px 0 0 130px;
+        padding:0 0 0 130px;
+        @include desktop{
+            padding-left:35px;
+        }
+        @include smartphone{
+            padding-left:0;
+            width:100%;
+            float:none;
+            margin-bottom:50px;
+        }
         .block_alla_kholmatova__info__logos{
             margin:0;
             img{
@@ -177,6 +205,7 @@
         .block_alla_kholmatova__info__title{
             font-weight:400;
             font-size:2.75rem;
+            line-height:3rem;
             span{
                 font-weight:100;
             }
@@ -188,6 +217,10 @@
             height:40px;
             margin-top:15px;
             padding-top:8px;
+            @include smartphone{
+                display:block !important;
+                margin:auto;
+            }
         }
     }
     .block_alla_kholmatova__picture{
@@ -195,6 +228,53 @@
         float:right;
         margin:0;
         text-align:center;
+        @include smartphone{
+            width:100%;
+            float:none;
+        }
+    }
+    .block_alla_kholmatova__social{
+        list-style:none;
+        text-align:center;
+        margin:15px 0 0 0;
+        padding:0;
+        li{
+            display:inline-block;
+            width:25px;
+            height:25px;
+            margin-left:10px;
+            margin-right:10px;
+            a:link,
+            a:visited{
+                display:block;
+                height:25px;
+                width:25px;
+                background-color:transparent;
+                background-repeat:no-repeat;
+                background-position:50% 50%;
+                span{
+                    display:none;
+                }
+                &:hover,
+                &:active{
+                    -ms-transform: scale(1.3);
+                    -webkit-transform: scale(1.3);
+                    transform: scale(1.3);
+                }
+            }
+            &.m-twitter{
+                a:link,
+                a:visited{
+                    background-image:url('../img/social_ico_twitter.svg');
+                }
+            }
+            &.m-site{
+                a:link,
+                a:visited{
+                    background-image:url('../img/social_ico_site.svg');
+                }
+            }
+        }
     }
 }
 
@@ -209,6 +289,11 @@
         width:50%;
         margin:0;
         padding:35px;
+        @include tablet{
+            float:none;
+            width:100%;
+            padding-bottom:10px;
+        }
         img{
             max-width:100%;
         }
@@ -218,6 +303,11 @@
         width:50%;
         padding:35px;
         color:$text;
+        @include tablet{
+            float:none;
+            width:100%;
+            padding-top:10px;
+        }
         p{
             margin:0.5rem 0 1rem 0;
         }
@@ -231,7 +321,11 @@
     background:$bg2 url('../img/separator.svg') repeat-x 0 35px;
     color:$text;
     font-size:1.125rem;
-    padding:85px 35px 35px 35px;
+    padding:85px 65px 35px 65px;
+    @include tablet{
+        padding-left:35px;
+        padding-right:35px;
+    }
     p{
         margin:0 0 1.5rem 0;
         padding:0;
@@ -254,6 +348,7 @@
     }
     .block_tickets__subscribe_form{
         margin-top:50px;
+        margin-bottom:100px;
         .block_tickets__subscribe_form__title{
             font-size:1.5rem;
             text-transform:uppercase;
@@ -270,20 +365,6 @@
             padding:0 0 0 0;
             border:none;
             text-align:center;
-            input{
-                @extend .input_style1;
-                display:block;
-                margin:auto;
-                width:400px;
-            }
-            button{
-                @extend .button_style2;
-                display:block;
-                height:36px;
-                width:190px;
-                font-size:0.9375rem;
-                margin-top:25px;
-            }
         }
     }
 }

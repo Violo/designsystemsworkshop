@@ -4,6 +4,7 @@
 // - button_style1
 // - button_style2
 // - input_style1
+// - mc_embed_signup
 
 
 
@@ -51,4 +52,38 @@
     height:48px;
     margin-bottom:5px;
     padding:20px;
+}
+
+
+
+// mc_embed_signup
+#mc_embed_signup {
+    background:$white;
+    clear:left;
+    input{
+        @extend .input_style1;
+        display:block;
+        &.email{
+            @extend .input_style1;
+            font-family:'Roboto', Helvetica, Arial, sans-serif;
+            font-size:1.125rem;
+            padding:0;
+            margin:0 auto 30px auto !important;
+            min-height:auto;
+            width:400px !important;
+            min-width:auto;
+            @include smartphone{
+                width:90% !important;
+            }
+        }
+        &.button{
+            @extend .button_style2;
+            display:block !important;
+            height:36px !important;
+            width:190px !important;
+            margin:auto !important;
+            min-width:auto !important;
+            font-size:0.9375rem !important;
+        }
+    }
 }

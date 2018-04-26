@@ -372,6 +372,10 @@ button {
     padding-left: 40px;
     padding-right: 40px;
     position: relative; }
+    @media (min-width: 0) and (max-width: 640px) {
+      .main_header .content_wrapper {
+        padding-left: 10px;
+        padding-right: 10px; } }
   .main_header .logo_evento {
     margin-top: 12px;
     margin-bottom: 0;
@@ -390,6 +394,10 @@ button {
     margin: 21px 0 0 0;
     padding: 0;
     text-align: center; }
+    @media (min-width: 0) and (max-width: 640px) {
+      .main_header .main_header__list_area {
+        left: 250px;
+        right: 250px; } }
     .main_header .main_header__list_area li {
       display: inline-block;
       font-size: 0.9375rem;
@@ -410,16 +418,27 @@ button {
     width: 120px;
     margin-top: 15px;
     padding-top: 4px; }
+    @media (min-width: 0) and (max-width: 640px) {
+      .main_header .main_header__link_tickets {
+        width: 80px; } }
 
 .main_content {
   margin-top: 75px; }
   .main_content .content_wrapper {
     padding-left: 40px;
     padding-right: 40px; }
+    @media (min-width: 0) and (max-width: 640px) {
+      .main_content .content_wrapper {
+        padding-left: 10px;
+        padding-right: 10px; } }
 
 .main_footer .content_wrapper {
   padding-left: 40px;
   padding-right: 40px; }
+  @media (min-width: 0) and (max-width: 640px) {
+    .main_footer .content_wrapper {
+      padding-left: 10px;
+      padding-right: 10px; } }
 .main_footer .main_footer__organization {
   font-weight: 100;
   font-size: 0.8125rem;
@@ -458,7 +477,16 @@ button {
     width: 65%;
     float: left;
     margin: 0;
-    padding: 20px 0 0 130px; }
+    padding: 0 0 0 130px; }
+    @media (min-width: 0) and (max-width: 1024px) {
+      .block_alla_kholmatova .block_alla_kholmatova__info {
+        padding-left: 35px; } }
+    @media (min-width: 0) and (max-width: 640px) {
+      .block_alla_kholmatova .block_alla_kholmatova__info {
+        padding-left: 0;
+        width: 100%;
+        float: none;
+        margin-bottom: 50px; } }
     .block_alla_kholmatova .block_alla_kholmatova__info .block_alla_kholmatova__info__logos {
       margin: 0; }
       .block_alla_kholmatova .block_alla_kholmatova__info .block_alla_kholmatova__info__logos img {
@@ -474,7 +502,8 @@ button {
       font-weight: 100; }
     .block_alla_kholmatova .block_alla_kholmatova__info .block_alla_kholmatova__info__title {
       font-weight: 400;
-      font-size: 2.75rem; }
+      font-size: 2.75rem;
+      line-height: 3rem; }
       .block_alla_kholmatova .block_alla_kholmatova__info .block_alla_kholmatova__info__title span {
         font-weight: 100; }
     .block_alla_kholmatova .block_alla_kholmatova__info .block_alla_kholmatova__info__cta {
@@ -483,11 +512,53 @@ button {
       height: 40px;
       margin-top: 15px;
       padding-top: 8px; }
+      @media (min-width: 0) and (max-width: 640px) {
+        .block_alla_kholmatova .block_alla_kholmatova__info .block_alla_kholmatova__info__cta {
+          display: block !important;
+          margin: auto; } }
   .block_alla_kholmatova .block_alla_kholmatova__picture {
     width: 35%;
     float: right;
     margin: 0;
     text-align: center; }
+    @media (min-width: 0) and (max-width: 640px) {
+      .block_alla_kholmatova .block_alla_kholmatova__picture {
+        width: 100%;
+        float: none; } }
+  .block_alla_kholmatova .block_alla_kholmatova__social {
+    list-style: none;
+    text-align: center;
+    margin: 15px 0 0 0;
+    padding: 0; }
+    .block_alla_kholmatova .block_alla_kholmatova__social li {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      margin-left: 10px;
+      margin-right: 10px; }
+      .block_alla_kholmatova .block_alla_kholmatova__social li a:link,
+      .block_alla_kholmatova .block_alla_kholmatova__social li a:visited {
+        display: block;
+        height: 25px;
+        width: 25px;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: 50% 50%; }
+        .block_alla_kholmatova .block_alla_kholmatova__social li a:link span,
+        .block_alla_kholmatova .block_alla_kholmatova__social li a:visited span {
+          display: none; }
+        .block_alla_kholmatova .block_alla_kholmatova__social li a:link:hover, .block_alla_kholmatova .block_alla_kholmatova__social li a:link:active,
+        .block_alla_kholmatova .block_alla_kholmatova__social li a:visited:hover,
+        .block_alla_kholmatova .block_alla_kholmatova__social li a:visited:active {
+          -ms-transform: scale(1.3);
+          -webkit-transform: scale(1.3);
+          transform: scale(1.3); }
+      .block_alla_kholmatova .block_alla_kholmatova__social li.m-twitter a:link,
+      .block_alla_kholmatova .block_alla_kholmatova__social li.m-twitter a:visited {
+        background-image: url("../img/social_ico_twitter.svg"); }
+      .block_alla_kholmatova .block_alla_kholmatova__social li.m-site a:link,
+      .block_alla_kholmatova .block_alla_kholmatova__social li.m-site a:visited {
+        background-image: url("../img/social_ico_site.svg"); }
 
 .block_alla_kholmatova_book {
   background-color: white; }
@@ -496,6 +567,11 @@ button {
     width: 50%;
     margin: 0;
     padding: 35px; }
+    @media (min-width: 0) and (max-width: 992px) {
+      .block_alla_kholmatova_book .block_alla_kholmatova__picture {
+        float: none;
+        width: 100%;
+        padding-bottom: 10px; } }
     .block_alla_kholmatova_book .block_alla_kholmatova__picture img {
       max-width: 100%; }
   .block_alla_kholmatova_book .block_alla_kholmatova__text {
@@ -503,6 +579,11 @@ button {
     width: 50%;
     padding: 35px;
     color: #4A4A4A; }
+    @media (min-width: 0) and (max-width: 992px) {
+      .block_alla_kholmatova_book .block_alla_kholmatova__text {
+        float: none;
+        width: 100%;
+        padding-top: 10px; } }
     .block_alla_kholmatova_book .block_alla_kholmatova__text p {
       margin: 0.5rem 0 1rem 0; }
 
@@ -510,7 +591,11 @@ button {
   background: #F2F2F2 url("../img/separator.svg") repeat-x 0 35px;
   color: #4A4A4A;
   font-size: 1.125rem;
-  padding: 85px 35px 35px 35px; }
+  padding: 85px 65px 35px 65px; }
+  @media (min-width: 0) and (max-width: 992px) {
+    .block_workshop {
+      padding-left: 35px;
+      padding-right: 35px; } }
   .block_workshop p {
     margin: 0 0 1.5rem 0;
     padding: 0;
@@ -526,7 +611,8 @@ button {
     margin: 30px 0 0 0;
     text-align: left; }
   .block_tickets .block_tickets__subscribe_form {
-    margin-top: 50px; }
+    margin-top: 50px;
+    margin-bottom: 100px; }
     .block_tickets .block_tickets__subscribe_form .block_tickets__subscribe_form__title {
       font-size: 1.5rem;
       text-transform: uppercase;
@@ -541,16 +627,6 @@ button {
       padding: 0 0 0 0;
       border: none;
       text-align: center; }
-      .block_tickets .block_tickets__subscribe_form fieldset input {
-        display: block;
-        margin: auto;
-        width: 400px; }
-      .block_tickets .block_tickets__subscribe_form fieldset button {
-        display: block;
-        height: 36px;
-        width: 190px;
-        font-size: 0.9375rem;
-        margin-top: 25px; }
 
 .button_style1, .main_header .main_header__link_tickets, .block_alla_kholmatova .block_alla_kholmatova__info .block_alla_kholmatova__info__cta {
   border: 1px solid white;
@@ -564,7 +640,7 @@ button {
     color: white;
     background-color: #E23336; }
 
-.button_style2, .block_tickets .block_tickets__subscribe_form fieldset button {
+.button_style2, #mc_embed_signup input.button {
   border: 1px solid white;
   border-radius: 4px;
   background-color: #E23336;
@@ -572,11 +648,11 @@ button {
   text-align: center;
   font-weight: 700;
   display: inline-block; }
-  .button_style2:hover, .block_tickets .block_tickets__subscribe_form fieldset button:hover {
+  .button_style2:hover, #mc_embed_signup input.button:hover {
     color: #E23336;
     background-color: white; }
 
-.input_style1, .block_tickets .block_tickets__subscribe_form fieldset input {
+.input_style1, #mc_embed_signup input, #mc_embed_signup input.email {
   border: 1px solid #E3E5EB;
   border-radius: 6px;
   background-color: white;
@@ -585,5 +661,29 @@ button {
   height: 48px;
   margin-bottom: 5px;
   padding: 20px; }
+
+#mc_embed_signup {
+  background: white;
+  clear: left; }
+  #mc_embed_signup input {
+    display: block; }
+    #mc_embed_signup input.email {
+      font-family: 'Roboto', Helvetica, Arial, sans-serif;
+      font-size: 1.125rem;
+      padding: 0;
+      margin: 0 auto 30px auto !important;
+      min-height: auto;
+      width: 400px !important;
+      min-width: auto; }
+      @media (min-width: 0) and (max-width: 640px) {
+        #mc_embed_signup input.email {
+          width: 90% !important; } }
+    #mc_embed_signup input.button {
+      display: block !important;
+      height: 36px !important;
+      width: 190px !important;
+      margin: auto !important;
+      min-width: auto !important;
+      font-size: 0.9375rem !important; }
 
 /*# sourceMappingURL=style.css.map */
