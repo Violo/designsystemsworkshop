@@ -198,14 +198,27 @@
             }
         }
         .block_alla_kholmatova__info__text,
-        .block_alla_kholmatova__info__name{
+        .block_alla_kholmatova__info__name,
+        .block_alla_kholmatova__ashtag{
             font-size:1.375rem;
             font-weight:100;
+            margin:10px 0 10px 0;
+        }
+        .block_alla_kholmatova__info__name{
+            margin-bottom:60px;
+        }
+        .block_alla_kholmatova__ashtag{
+            margin-bottom:5px;
+            @include smartphone{
+                text-align:center;
+                margin-bottom:20px;
+            }
         }
         .block_alla_kholmatova__info__title{
             font-weight:400;
             font-size:2.75rem;
             line-height:3rem;
+            margin:0 0 0 0;
             span{
                 font-weight:100;
             }
