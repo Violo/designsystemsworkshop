@@ -617,6 +617,8 @@ button {
     font-size: 24px;
     margin-top: 20px;
     margin-bottom: 50px; }
+  .block_workshop .block_workshop__tuned {
+    text-align: center; }
 
 .block_tickets {
   background: white url("../img/separator.svg") repeat-x 0 35px;
