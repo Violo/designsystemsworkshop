@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="11px" height="11px" viewBox="0 0 11 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.15">
+        <g id="Homepage" transform="translate(-570.000000, -3219.000000)" fill="#3C3C3C" fill-rule="nonzero">
+            <g id="Location" transform="translate(40.000000, 3151.000000)">
+                <g id="separator" transform="translate(35.000000, 63.000000)">
+                    <g id="pattern">
+                        <g transform="translate(547.500000, 10.500000) rotate(-90.000000) translate(-547.500000, -10.500000) translate(538.000000, -578.000000)">
+                            <g id="Group-2" transform="translate(-0.000000, 0.000000)">
+                                <ellipse id="Oval" cx="9.253" cy="541.733854" rx="4.807" ry="5.05920139"></ellipse>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

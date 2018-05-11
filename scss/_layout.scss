@@ -6,10 +6,15 @@
 // - main_header
 // - main_content
 // - main_footer
+// - button_cta
 // - block_alla_kholmatova
 // - block_alla_kholmatova_book
 // - block_workshop
 // - block_tickets
+// - block_image
+// - block_image2
+// - block_mention
+// - block_workshop_info
 
 
 
@@ -165,6 +170,26 @@
 
 
 
+// button_cta
+.button_cta{
+    margin:20px 0 20px 0;
+    text-align:center;
+    .button_cta__action{
+        @extend .button_style2;
+        font-size:1.125rem;
+        width:200px;
+        height:40px;
+        margin-top:15px;
+        padding-top:8px;
+        @include smartphone{
+            display:block !important;
+            margin:auto;
+        }
+    }
+}
+
+
+
 // block_alla_kholmatova
 .block_alla_kholmatova{
     @extend .m-clear_fix;
@@ -184,18 +209,6 @@
             width:100%;
             float:none;
             margin-bottom:50px;
-        }
-        .block_alla_kholmatova__info__logos{
-            margin:0;
-            img{
-                height:15px;
-                margin-right:20px
-            }
-            .block_alla_kholmatova__info__logos__ex{
-                height:23px;
-                position:relative;
-                top:10px;
-            }
         }
         .block_alla_kholmatova__info__text,
         .block_alla_kholmatova__info__name,
@@ -397,5 +410,141 @@
             border:none;
             text-align:center;
         }
+    }
+}
+
+
+
+// block_image
+.block_image{
+    background-color:$bg2;
+    @include tablet-portrait{
+        display:none;
+    }
+    img{
+        display:block;
+        margin:auto;
+        max-width:100%;
+    }
+}
+
+
+
+// block_image2
+.block_image2{
+    @extend .m-clear_fix;
+    background-color:$white;
+    img{
+        display:block;
+        max-width:100%;
+    }
+    .block_image__figure_l{
+        width:50%;
+        margin:0;
+        padding:0;
+        float:left;
+        @include tablet-portrait{
+            width:100%;
+            float:none;
+        }
+        img{
+            float:right;
+            @include tablet-portrait{
+                float:none;
+                margin:auto;
+            }
+        }
+    }
+    .block_image__figure_r{
+        width:50%;
+        margin:0;
+        padding:0;
+        float:right;
+        border-left:1px solid $white;
+        @include tablet-portrait{
+            display:none;
+        }
+        img{
+            float:left;
+        }
+    }
+}
+
+
+
+// block_mention
+.block_mention{
+    background-color:$white;
+    color:$text;
+    padding:35px 35px 35px 35px;
+    .block_mention__list{
+        width:70%;
+        margin:0 auto 0 auto;
+        padding:0;
+        list-style:none;
+        li{
+            text-align:center;
+            font-size:1em;
+            margin:0 0 60px 0;
+            .block_mention__list__name{
+                font-size:0.875rem;
+            }
+            &:last-child{
+                margin-bottom:0;
+            }
+        }
+    }
+}
+
+
+
+// block_workshop_info
+.block_workshop_info{
+    @extend .m-clear_fix;
+    background-color:$white;
+    color:$text;
+    padding:35px 65px 35px 65px;
+    @include tablet{
+        padding-left:35px;
+        padding-right:35px;
+    }
+    .block_workshop_info__title{
+        font-size:1.125rem;
+        font-weight:normal;
+        text-align:center;
+        margin:15px 0 40px 0;
+        padding:0;
+    }
+    .block_workshop_info__list{
+        list-style:none;
+        margin:0 2% 30px 0;
+        padding:0;
+        float:left;
+        width:48%;
+        @include tablet{
+            width:100%;
+            float:none;
+            margin-right:0;
+            margin-bottom:0;
+        }
+        & + .block_workshop_info__list{
+            float:right;
+            margin-right:0;
+            margin-left:2%;
+            @include tablet{
+                float:none;
+                margin-left:0;
+                margin-bottom:30px;
+            }
+        }
+        li{
+            margin-bottom:3px;
+            background:transparent url('../img/bullet.svg') no-repeat 0 5px;
+            padding-left:22px;
+        }
+    }
+    .block_workshop_info__text{
+        clear:both;
+        margin-bottom:30px;
     }
 }
