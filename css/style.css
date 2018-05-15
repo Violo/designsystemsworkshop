@@ -443,7 +443,8 @@ button {
 .main_footer .main_footer__organization {
   font-weight: 100;
   font-size: 0.8125rem;
-  text-align: center; }
+  text-align: center;
+  margin-top: 10px; }
 .main_footer .main_footer__organization_company {
   list-style: none;
   margin: 0;
@@ -464,10 +465,13 @@ button {
         margin-bottom: 15px; } }
 .main_footer .main_footer__policy {
   font-size: 0.6875rem;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px; }
   .main_footer .main_footer__policy a:link,
   .main_footer .main_footer__policy a:visited {
-    color: white; }
+    color: white;
+    outline: none; }
     .main_footer .main_footer__policy a:link:hover, .main_footer .main_footer__policy a:link:active,
     .main_footer .main_footer__policy a:visited:hover,
     .main_footer .main_footer__policy a:visited:active {
@@ -751,6 +755,9 @@ button {
     .workshop_details li:last-child {
       margin-right: 0;
       float: right; }
+      @media (min-width: 0) and (max-width: 992px) {
+        .workshop_details li:last-child {
+          margin-bottom: 0; } }
     .workshop_details li .workshop_details__title {
       font-size: 1.125rem;
       font-weight: normal;
@@ -902,6 +909,42 @@ button {
       .block_location .block_location__list li .block_location__list__text {
         margin: 0; }
 
+.modal .modal-dialog {
+  max-width: 80%; }
+  @media (min-width: 0) and (max-width: 575px) {
+    .modal .modal-dialog {
+      max-width: 100%; } }
+.modal .modal-content {
+  color: #4A4A4A;
+  font-size: 0.75rem;
+  font-weight: 100; }
+.modal .modal-body p {
+  margin: 0 0 10px 0;
+  padding: 0;
+  line-height: 1rem; }
+.modal .modal-body ul, .modal .modal-body ol {
+  margin: 0 40px 10px 40px;
+  padding: 0; }
+  .modal .modal-body ul li, .modal .modal-body ol li {
+    margin-bottom: 5px;
+    line-height: 1rem; }
+.modal .modal-body strong {
+  font-weight: 400; }
+.modal .modal-body a:link,
+.modal .modal-body a:visited {
+  color: #E23336;
+  font-weight: 400; }
+.modal .modal-body a:hover,
+.modal .modal-body a:active {
+  text-decoration: underline; }
+.modal .modal-footer {
+  justify-content: center; }
+  .modal .modal-footer button {
+    height: 30px;
+    width: 80px;
+    cursor: pointer;
+    outline: none; }
+
 .button_style1, .main_header .main_header__link_tickets, .block_alla_kholmatova .block_alla_kholmatova__info .block_alla_kholmatova__info__cta {
   border: 1px solid white;
   border-radius: 4px;
@@ -915,7 +958,7 @@ button {
     background-color: #E23336; }
 
 .button_style2, .button_cta .button_cta__action, .block_location .block_location__picture .block_location__picture__text a:link,
-.block_location .block_location__picture .block_location__picture__text a:visited, #mc_embed_signup input.button {
+.block_location .block_location__picture .block_location__picture__text a:visited, .modal .modal-footer button, #mc_embed_signup input.button {
   border: 1px solid white;
   border-radius: 4px;
   background-color: #E23336;
@@ -924,7 +967,7 @@ button {
   font-weight: 700;
   display: inline-block; }
   .button_style2:hover, .button_cta .button_cta__action:hover, .block_location .block_location__picture .block_location__picture__text a:hover:link,
-  .block_location .block_location__picture .block_location__picture__text a:hover:visited, #mc_embed_signup input.button:hover {
+  .block_location .block_location__picture .block_location__picture__text a:hover:visited, .modal .modal-footer button:hover, #mc_embed_signup input.button:hover {
     color: #E23336;
     background-color: white; }
 

@@ -18,6 +18,7 @@
 // - block_mention
 // - block_workshop_info
 // - block_location
+// - modal
 
 
 
@@ -139,6 +140,7 @@
         font-weight:100;
         font-size:0.8125rem;
         text-align:center;
+        margin-top:10px;
     }
     .main_footer__organization_company{
         list-style:none;
@@ -164,9 +166,12 @@
     .main_footer__policy{
         font-size:0.6875rem;
         text-align:center;
+        margin-bottom:10px;
+        margin-top:10px;
         a:link,
         a:visited{
             color:$white;
+            outline:none;
             &:hover,
             &:active{
                 text-decoration:underline;
@@ -536,6 +541,9 @@
         &:last-child{
             margin-right:0;
             float:right;
+            @include tablet{
+                margin-bottom:0;
+            }
         }
         .workshop_details__title{
             font-size:1.125rem;
@@ -729,6 +737,60 @@
             .block_location__list__text{
                 margin:0;
             }
+        }
+    }
+}
+
+
+
+// modal
+.modal{
+    .modal-dialog{
+        max-width:80%;
+        @include bootstrap{
+            max-width:100%;
+        }
+    }
+    .modal-content{
+        color:$text;
+        font-size:0.75rem;
+        font-weight:100
+    }
+    .modal-body{
+        p{
+            margin:0 0 10px 0;
+            padding:0;
+            line-height:1rem;
+        }
+        ul, ol{
+            margin:0 40px 10px 40px;
+            padding:0;
+            li{
+                margin-bottom:5px;
+                line-height:1rem;
+            }
+        }
+        strong{
+            font-weight:400;
+        }
+        a:link,
+        a:visited{
+            color:$text_red;
+            font-weight:400;
+        }
+        a:hover,
+        a:active{
+            text-decoration:underline;
+        }
+    }
+    .modal-footer{
+        justify-content:center;
+        button{
+            @extend .button_style2;
+            height:30px;
+            width:80px;
+            cursor:pointer;
+            outline:none;
         }
     }
 }

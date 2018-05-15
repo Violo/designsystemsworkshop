@@ -27,11 +27,17 @@ $header-height:75px;
 
 
 // Mediaquery & Browserquery
+$m-bootstrap-width:575px;
 $m-smartphone-width:640px;
 $s-tablet-width:768px;
 $m-tablet-width:992px;
 $s-desktop-width:1024px;
 
+@mixin bootstrap {
+  @media (min-width: 0) and (max-width: #{$m-bootstrap-width}) {
+    @content;
+  }
+}
 @mixin smartphone {
   @media (min-width: 0) and (max-width: #{$m-smartphone-width}) {
     @content;

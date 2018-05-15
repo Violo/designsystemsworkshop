@@ -23,8 +23,12 @@
     <link rel="shortcut icon" href="img/favicon.ico" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" class="rel">
     <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     <title>Design Systems Workshop - with Alla Kholmatova</title>
 </head>
 
@@ -83,7 +87,7 @@
                         <strong>Past: Lead designer at open education startup FutureLearn in London.</strong>
                     </p>
                     <p>
-                        In the last few years Alla spent a huge amount of time working on and researching about her interests. She’s been sharing her insights with people through articles, workshops, projects, and most recently – a book.
+                        In the last few years Alla spent a huge amount of time working on and researching about her interests. She's been sharing her insights with people through articles, workshops, projects, and most recently – a book.
                     </p>
                     <p>
                         <strong>Design Systems Book</strong>: As the web continues to become more complex, designing static pages has become untenable, so that many of us have started to approach design in a more systematic way. In this book, Alla Kholmatova sets out to identify what makes an effective design system that can empower teams to create great digital products.
@@ -142,23 +146,23 @@
                 </figure>
             </article>
             <article class="block_workshop_info">
-                <h2 class="block_workshop_info__title">What you’ll learn</h2>
+                <h2 class="block_workshop_info__title">What you'll learn</h2>
                 <ul class="block_workshop_info__list">
                     <li>How to <strong>establish a modular system</strong> using atomic design</li>
-                    <li>How to adapt atomic design to suit your <strong>team’s needs</strong></li>
+                    <li>How to adapt atomic design to suit your <strong>team's needs</strong></li>
                     <li>How to define and evolve <strong>design patterns</strong></li>
                     <li>How to establish a <strong>shared design language</strong> within your team</li>
                     <li>How to <strong>validate and test</strong> patterns and modules</li>
                 </ul>
                 <ul class="block_workshop_info__list">
-                    <li>How to combine the patterns together in a way that <strong>doesn’t break the whole</strong></li>
+                    <li>How to combine the patterns together in a way that <strong>doesn't break the whole</strong></li>
                     <li>How to <strong>organize designs and structure code</strong> in a modular fashion</li>
                     <li>How to create a <strong>living pattern library</strong></li>
                     <li>How to make sure your design system can cope with <strong>new requirements</strong></li>
                     <li>How to establish a <strong>"modular" thinking culture</strong> in mid-size to large teams</li>
                 </ul>
                 <p class="block_workshop_info__text">
-                    You'll also take away a few common stumbling blocks, a few lessons learned and a plethora of practical, hands-on tips on establishing a pattern language within your company. We won’t be touching too much on code; instead, the workshop will focus on design techniques and practical ways of <strong>creating a scalable, flexible and modular design system</strong> applicable to both small and large web projects.
+                    You'll also take away a few common stumbling blocks, a few lessons learned and a plethora of practical, hands-on tips on establishing a pattern language within your company. We won't be touching too much on code; instead, the workshop will focus on design techniques and practical ways of <strong>creating a scalable, flexible and modular design system</strong> applicable to both small and large web projects.
                 </p>
                 <div class="button_cta">
                     <a href="#tickets" class="button_cta__action">Buy tickets</a>
@@ -234,7 +238,7 @@
                 <ul class="block_location__list">
                     <li>
                         <h3 class="block_location__list__title">Car</h3>
-                        <p class="block_location__list__text">Take the Bologna freeway exit number 11 "Bologna Centro/San Vitale". Take Via Massarenti, then Via Rimesse on the right and turn left in Via Sante Vincenzi. There’s a small parking area inside the location or you can park in the streets nearby.</p>
+                        <p class="block_location__list__text">Take the Bologna freeway exit number 11 "Bologna Centro/San Vitale". Take Via Massarenti, then Via Rimesse on the right and turn left in Via Sante Vincenzi. There's a small parking area inside the location or you can park in the streets nearby.</p>
                     </li>
                     <li>
                         <h3 class="block_location__list__title">Train and bus</h3>
@@ -296,11 +300,66 @@
                 </li>
             </ul>
             <p class="main_footer__policy">
-                <!-- <a href="">Privacy Policy</a> -->
-                &nbsp;
+                <a href="#" data-toggle="modal" data-target="#privacyModal">Privacy Policy</a>
             </p>
         </div>
     </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="privacyModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Privacy Policy</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+                Ai sensi dell'articolo 13 del GDPR 2016/679 forniamo le seguenti informazioni:
+            </p>
+            <p>
+            I dati personali (nome, cognome, estremi documento di riconoscimento e copia dello stesso, telefono, indirizzo email, etc), che saranno forniti al momento dell'iscrizione all'evento, saranno utilizzati da Eventbrite secondo <a href="https://www.eventbrite.it/support/articles/it/Troubleshooting/informativa-sulla-privacy-di-eventbrite?lg=it">queste policy e termini e condizioni</a>, e da Ideato srl, società organizzatrice dell'evento, da per le seguenti finalità:
+            </p>
+            <ol>
+                <li>
+                    per adempiere puntualmente agli obblighi contrattuali derivanti dalla seguente iscrizione: comunicazioni relative a: aggiornamenti, modifiche dell'orario, della località, delle tematiche, dei relatori etc;
+                </li>
+                <li>
+                    in relazione ad obblighi di legge, es. trattamento connesso alla disciplina IVA (registro fiscale IVA, etc.);
+                </li>
+            </ol>
+            <p>
+            Ove il soggetto che conferisce i dati abbia un'età inferiore ai 18 anni, tale trattamento sarà consentito soltanto se, tale consenso, sia prestato o autorizzato dall'esercente la responsabilità genitoriale per il quale sono acquisiti i dati identificativi, e solo previa presentazione di copia dei documenti di riconoscimento del minore e dell'esercente la potestà genitoriale
+            </p>
+            <p>
+            Il trattamento è effettuato con strumenti informatici e telematici; risponde alle logiche di organizzazione ed elaborazione unicamente correlate alle finalità sopradescritte, e comunque in modo da garantire la sicurezza, l'integrità e la riservatezza dei dati stessi nel rispetto delle misure organizzative, fisiche e logiche previste dalle disposizioni vigenti.
+            </p>
+            <p>
+            I dati personali vengono conservati per tutta la durata necessaria per adempiere agli obblighi di legge, nel caso di revoca e/o altro tipo di cessazione del rapporto, nei termini prescrizionali indicati nell'art. 19 del D. L.vo 35/2017, si ricorda che è possibile esercitare il diritto di:
+            </p>
+            <ul>
+                <li>accesso ai dati personali</li>
+                <li>ottenere la rettifica o la cancellazione degli stessi o la limitazione del trattamento</li>
+                <li>opporsi al trattamento</li>
+                <li>portabilità dei dati</li>
+                <li>revocare il consenso, ove previsto.</li>
+            </ul>
+            <p>
+            Si precisa però che la revoca del consenso non pregiudica la liceità del trattamento basata sul consenso conferito prima della revoca
+            proporre reclamo all'autorità di controllo (Garante Privacy).<br />
+            L'esercizio dei suoi diritti potrà avvenire attraverso l'invio di una richiesta mediante email all'indirizzo e-mail <a href="mailto:info@ideato.it">info@ideato.it</a><br />
+            Il Titolare del trattamento dati è <strong>Ideato s.r.l.</strong>, (P.I. 03727570404) con sede in Cesena, Piazza Sanguinetti 106, Cesena. <br />
+            Il Responsabile del Trattamento, cui è possibile rivolgersi per esercitare i diritti di cui all'Art. 12 e/o per eventuali chiarimenti in materia di tutela dati personali, è Michele Orselli è raggiungibile all'indirizzo: <a href="mailto:fax@ideato.it">fax@ideato.it</a>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118276675-1"></script>
