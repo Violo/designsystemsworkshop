@@ -300,11 +300,11 @@ template {
 hr {
   display: none; }
 
-.m-clear_fix:before, .block_alla_kholmatova:before, .block_alla_kholmatova_book:before, .block_image2:before, .block_workshop_info:before, .m-clear_fix:after, .block_alla_kholmatova:after, .block_alla_kholmatova_book:after, .block_image2:after, .block_workshop_info:after {
+.m-clear_fix:before, .block_alla_kholmatova:before, .block_alla_kholmatova_book:before, .block_image2:before, .workshop_details:before, .block_workshop_info:before, .m-clear_fix:after, .block_alla_kholmatova:after, .block_alla_kholmatova_book:after, .block_image2:after, .workshop_details:after, .block_workshop_info:after {
   content: "";
   display: block;
   overflow: hidden; }
-.m-clear_fix:after, .block_alla_kholmatova:after, .block_alla_kholmatova_book:after, .block_image2:after, .block_workshop_info:after {
+.m-clear_fix:after, .block_alla_kholmatova:after, .block_alla_kholmatova_book:after, .block_image2:after, .workshop_details:after, .block_workshop_info:after {
   clear: both; }
 
 .m-clear_floats {
@@ -367,7 +367,8 @@ button {
   top: 0;
   left: 0;
   width: 100vw;
-  background-color: #E23336; }
+  background-color: #E23336;
+  z-index: 2; }
   .main_header .content_wrapper {
     padding-left: 40px;
     padding-right: 40px;
@@ -458,6 +459,9 @@ button {
     .main_footer .main_footer__organization_company li img {
       max-width: 100%;
       height: 35px; }
+    @media (min-width: 0) and (max-width: 640px) {
+      .main_footer .main_footer__organization_company li {
+        margin-bottom: 15px; } }
 .main_footer .main_footer__policy {
   font-size: 0.6875rem;
   text-align: center; }
@@ -667,6 +671,8 @@ button {
     display: block;
     margin: auto;
     max-width: 100%; }
+  .block_image.m-background1 {
+    background-color: white; }
 
 .block_image2 {
   background-color: white; }
@@ -699,6 +705,64 @@ button {
         display: none; } }
     .block_image2 .block_image__figure_r img {
       float: left; }
+
+.block_image3 {
+  background-color: white; }
+  .block_image3 img {
+    display: block;
+    margin: auto;
+    max-width: 100%; }
+    .block_image3 img.mobile {
+      display: none; }
+    @media (min-width: 0) and (max-width: 768px) {
+      .block_image3 img {
+        display: none; }
+        .block_image3 img.mobile {
+          display: block; } }
+
+.workshop_details {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  margin-top: -260px;
+  list-style: none;
+  padding: 35px 65px 35px 65px;
+  font-weight: 100; }
+  @media (min-width: 0) and (max-width: 1024px) {
+    .workshop_details {
+      margin-top: 0;
+      position: static;
+      color: #4A4A4A;
+      font-weight: 400; } }
+  @media (min-width: 0) and (max-width: 992px) {
+    .workshop_details {
+      padding-left: 35px;
+      padding-right: 35px; } }
+  .workshop_details li {
+    width: 30%;
+    margin-right: 3%;
+    float: left; }
+    @media (min-width: 0) and (max-width: 992px) {
+      .workshop_details li {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 50px;
+        float: none; } }
+    .workshop_details li:last-child {
+      margin-right: 0;
+      float: right; }
+    .workshop_details li .workshop_details__title {
+      font-size: 1.125rem;
+      font-weight: normal;
+      margin: 0 0 10px 0;
+      padding: 0; }
+    .workshop_details li .workshop_details__table {
+      margin: 0;
+      padding: 0; }
+      .workshop_details li .workshop_details__table tr td {
+        padding: 0 10px; }
+        .workshop_details li .workshop_details__table tr td:first-child {
+          text-align: center; }
 
 .block_mention {
   background-color: white;
