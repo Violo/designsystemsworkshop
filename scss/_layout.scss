@@ -17,6 +17,7 @@
 // - workshop_details
 // - block_mention
 // - block_workshop_info
+// - block_location
 
 
 
@@ -633,5 +634,101 @@
     .block_workshop_info__text{
         clear:both;
         margin-bottom:30px;
+    }
+}
+
+
+
+// block_location
+.block_location{
+    background:$white url('../img/separator.svg') repeat-x 0 65px;
+    color:$text;
+    padding-top:150px;
+    .block_location__picture{
+        margin:0 0 30px 0;
+        padding:0;
+        position:relative;
+        text-align:center;
+        img{
+            max-width:100%;
+            &.mobile{
+                display:none;
+            }
+            @include tablet-portrait{
+                display:none;
+                &.mobile{
+                    display:inline-block;
+                }
+            }
+        }
+        .block_location__picture__text{
+            position:absolute;
+            bottom:30px;
+            left:65px;
+            text-align:left;
+            @include tablet{
+                left:35px;
+            }
+            @include tablet-portrait{
+                left:65px;
+            }
+            @include smartphone{
+                left:35px;
+            }
+            address{
+                font-style:normal;
+                font-size:1.125rem;
+                font-weight:400;
+            }
+            a:link,
+            a:visited{
+                @extend .button_style2;
+                font-weight:normal;
+                margin-top:10px;
+                width:60px;
+                height:25px;
+            }
+        }
+    }
+    .block_location__title{
+        font-size:1.125rem;
+        font-weight:normal;
+        text-align:center;
+        margin:0;
+        padding:0;
+    }
+    .block_location__list{
+        @extend .m-clear_fix;
+        margin:0;
+        padding:35px 65px 35px 65px;
+        list-style:none;
+        @include tablet{
+            padding-left:35px;
+            padding-right:35px;
+        }
+        li{
+            width:31%;
+            margin-right:3%;
+            float:left;
+            @include tablet{
+                width:100%;
+                margin-right:0;
+                margin-bottom:50px;
+                float:none;
+            }
+            &:last-child{
+                margin-right:0;
+                float:right;
+            }
+            .block_location__list__title{
+                font-size:1rem;
+                font-weight:700;
+                margin:0 0 3px 0;
+                padding:0;
+            }
+            .block_location__list__text{
+                margin:0;
+            }
+        }
     }
 }
