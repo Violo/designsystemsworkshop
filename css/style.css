@@ -480,11 +480,12 @@ button {
           .main_header .main_header__mobile_menu .dropdown-menu ul li a:visited {
             color: white; }
           .main_header .main_header__mobile_menu .dropdown-menu ul li.ticket {
-            display: block !important; }
+            display: block !important;
+            margin-top: 10px; }
             .main_header .main_header__mobile_menu .dropdown-menu ul li.ticket a:link,
             .main_header .main_header__mobile_menu .dropdown-menu ul li.ticket a:visited {
               display: block !important;
-              margin: 5px auto 0 auto;
+              margin: auto;
               width: 50%; }
 
 .main_content {

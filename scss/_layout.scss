@@ -172,11 +172,12 @@
                     }
                     &.ticket{
                         display:block !important;
+                        margin-top:10px;
                         a:link,
                         a:visited{
                             @extend .button_style1;
                             display:block !important;
-                            margin:5px auto 0 auto;
+                            margin:auto;
                             width:50%;
                         }
                     }
