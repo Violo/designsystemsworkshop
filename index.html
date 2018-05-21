@@ -37,7 +37,7 @@
     <title>Design Systems Workshop - with Alla Kholmatova</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#menu" data-offset="80">
     <header class="main_header">
         <div class="content_wrapper">
             <div class="main_header__mobile_menu">
@@ -53,7 +53,7 @@
               </div>
             </div>
             <a href="#tickets" class="main_header__link_tickets">Tickets</a>
-            <ul class="main_header__list_area">
+            <ul class="main_header__list_area" id="menu">
                 <li>
                     <a href="#allakholmatova">Alla Kholmatova</a>
                 </li>
@@ -72,7 +72,7 @@
     <section class="main_content">
         <div class="content_wrapper">
             <article class="block_alla_kholmatova">
-                <a name="allakholmatova"></a>
+                <a id="allakholmatova"></a>
                 <div class="block_alla_kholmatova__info">
                     <p class="block_alla_kholmatova__info__text">first time in Italy</p>
                     <h1 class="block_alla_kholmatova__info__title">Design Systems
@@ -113,7 +113,7 @@
             </article>
             <hr />
             <article class="block_workshop">
-                <a name="workshop"></a>
+                <a id="workshop"></a>
                 <p class="block_workshop__ashtag">#designsystemsworkshop</p>
                 <p>
                     How can we deal with the web continuing to <strong>change rapidly</strong>? <strong>Approaching design thinking in systems doesn't always makes clear how the core UX concepts—user goals, needs and behaviours, are embodied in design patterns we create</strong>. How do we make sure that by thinking about structure and modules we don't lose sight of the system as a whole? How do we strike the right balance between reusability and creative exploration, consistency and brand?
@@ -238,7 +238,7 @@
             </article>
             <hr />
             <article class="block_location">
-                <a name="location"></a>
+                <a id="location"></a>
                 <figure class="block_location__picture">
                     <img src="img/image_location.jpg" alt="" />
                     <img src="img/image2_location.jpg" class="mobile" alt="" />
