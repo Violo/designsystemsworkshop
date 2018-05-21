@@ -458,21 +458,21 @@ button {
       top: 61px !important;
       left: auto !important;
       right: 0 !important;
-      width: 200px;
+      width: 100%;
       padding: 10px 40px 10px 10px !important;
       background-color: #E23336; }
       @media (min-width: 0) and (max-width: 640px) {
         .main_header .main_header__mobile_menu .dropdown-menu {
-          padding-right: 10px !important;
-          width: 150px; } }
+          padding-right: 10px !important; } }
       .main_header .main_header__mobile_menu .dropdown-menu ul {
         list-style: none;
         margin: 0;
         padding: 0;
-        text-align: right; }
+        text-align: center; }
         .main_header .main_header__mobile_menu .dropdown-menu ul li {
-          margin-bottom: 10px;
-          font-size: 0.875rem; }
+          display: inline-block;
+          font-size: 0.875rem;
+          margin: 0 10px 0 10px; }
           .main_header .main_header__mobile_menu .dropdown-menu ul li a:link,
           .main_header .main_header__mobile_menu .dropdown-menu ul li a:visited {
             color: white; }
