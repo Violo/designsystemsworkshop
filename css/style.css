@@ -431,6 +431,9 @@ button {
     @media (min-width: 0) and (max-width: 992px) {
       .main_header .main_header__link_tickets {
         width: 80px; } }
+    @media (min-width: 0) and (max-width: 768px) {
+      .main_header .main_header__link_tickets {
+        display: none !important; } }
   .main_header .main_header__mobile_menu {
     display: none;
     float: right;
@@ -476,6 +479,13 @@ button {
           .main_header .main_header__mobile_menu .dropdown-menu ul li a:link,
           .main_header .main_header__mobile_menu .dropdown-menu ul li a:visited {
             color: white; }
+          .main_header .main_header__mobile_menu .dropdown-menu ul li.ticket {
+            display: block !important; }
+            .main_header .main_header__mobile_menu .dropdown-menu ul li.ticket a:link,
+            .main_header .main_header__mobile_menu .dropdown-menu ul li.ticket a:visited {
+              display: block !important;
+              margin: 5px auto 0 auto;
+              width: 50%; }
 
 .main_content {
   margin-top: 75px; }
@@ -999,7 +1009,8 @@ button {
     cursor: pointer;
     outline: none; }
 
-.button_style1, .main_header .main_header__link_tickets, .block_alla_kholmatova .block_alla_kholmatova__info .block_alla_kholmatova__info__cta {
+.button_style1, .main_header .main_header__link_tickets, .main_header .main_header__mobile_menu .dropdown-menu ul li.ticket a:link,
+.main_header .main_header__mobile_menu .dropdown-menu ul li.ticket a:visited, .block_alla_kholmatova .block_alla_kholmatova__info .block_alla_kholmatova__info__cta {
   border: 1px solid white;
   border-radius: 4px;
   background-color: white;
@@ -1007,7 +1018,8 @@ button {
   text-align: center;
   font-weight: 700;
   display: inline-block; }
-  .button_style1:hover, .main_header .main_header__link_tickets:hover, .block_alla_kholmatova .block_alla_kholmatova__info .block_alla_kholmatova__info__cta:hover {
+  .button_style1:hover, .main_header .main_header__link_tickets:hover, .main_header .main_header__mobile_menu .dropdown-menu ul li.ticket a:hover:link,
+  .main_header .main_header__mobile_menu .dropdown-menu ul li.ticket a:hover:visited, .block_alla_kholmatova .block_alla_kholmatova__info .block_alla_kholmatova__info__cta:hover {
     color: white;
     background-color: #E23336; }
 

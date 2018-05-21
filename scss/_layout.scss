@@ -115,6 +115,9 @@
         @include tablet{
             width:80px;
         }
+        @include tablet-portrait{
+            display:none !important;
+        }
     }
     .main_header__mobile_menu{
         display:none;
@@ -166,6 +169,16 @@
                     a:link,
                     a:visited{
                         color:$white;
+                    }
+                    &.ticket{
+                        display:block !important;
+                        a:link,
+                        a:visited{
+                            @extend .button_style1;
+                            display:block !important;
+                            margin:5px auto 0 auto;
+                            width:50%;
+                        }
                     }
                 }
             }
