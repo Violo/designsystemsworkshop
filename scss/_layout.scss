@@ -473,10 +473,10 @@
         text-align:left;
         iframe{
             @include tablet{
-                height:390px;
+                height:470px;
             }
             @include smartphone{
-                height:425px;
+                height:475px;
             }
         }
     }
