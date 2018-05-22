@@ -709,10 +709,10 @@ button {
     text-align: left; }
     @media (min-width: 0) and (max-width: 992px) {
       .block_tickets .block_tickets__eventbrite_badge iframe {
-        height: 390px; } }
+        height: 470px; } }
     @media (min-width: 0) and (max-width: 640px) {
       .block_tickets .block_tickets__eventbrite_badge iframe {
-        height: 425px; } }
+        height: 580px; } }
   .block_tickets .block_tickets__subscribe_form {
     margin-top: 50px;
     margin-bottom: 100px; }
