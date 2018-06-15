@@ -300,11 +300,11 @@ template {
 hr {
   display: none; }
 
-.m-clear_fix:before, .block_alla_kholmatova:before, .block_alla_kholmatova_book:before, .block_image2:before, .workshop_details:before, .block_workshop_info:before, .block_location .block_location__list:before, .m-clear_fix:after, .block_alla_kholmatova:after, .block_alla_kholmatova_book:after, .block_image2:after, .workshop_details:after, .block_workshop_info:after, .block_location .block_location__list:after {
+.m-clear_fix:before, .block_main_info:before, .block_alla_kholmatova_book:before, .block_image2:before, .workshop_details:before, .block_workshop_info:before, .block_location .block_location__list:before, .m-clear_fix:after, .block_main_info:after, .block_alla_kholmatova_book:after, .block_image2:after, .workshop_details:after, .block_workshop_info:after, .block_location .block_location__list:after {
   content: "";
   display: block;
   overflow: hidden; }
-.m-clear_fix:after, .block_alla_kholmatova:after, .block_alla_kholmatova_book:after, .block_image2:after, .workshop_details:after, .block_workshop_info:after, .block_location .block_location__list:after {
+.m-clear_fix:after, .block_main_info:after, .block_alla_kholmatova_book:after, .block_image2:after, .workshop_details:after, .block_workshop_info:after, .block_location .block_location__list:after {
   clear: both; }
 
 .m-clear_floats {
@@ -551,43 +551,43 @@ button {
         display: block !important;
         margin: auto; } }
 
-.block_alla_kholmatova {
+.block_main_info {
   background: transparent url("../img/symbols_bg.svg") repeat-y 0% 0%;
   color: white;
   padding: 30px 0 35px 0; }
-  .block_alla_kholmatova .block_alla_kholmatova__info {
+  .block_main_info .block_main_info__info {
     margin: 0;
     padding: 0 0 0 170px; }
     @media (min-width: 0) and (max-width: 1024px) {
-      .block_alla_kholmatova .block_alla_kholmatova__info {
+      .block_main_info .block_main_info__info {
         padding-left: 35px; } }
     @media (min-width: 0) and (max-width: 640px) {
-      .block_alla_kholmatova .block_alla_kholmatova__info {
+      .block_main_info .block_main_info__info {
         padding-left: 0;
         margin-bottom: 50px; } }
-    .block_alla_kholmatova .block_alla_kholmatova__info .block_alla_kholmatova__info__text,
-    .block_alla_kholmatova .block_alla_kholmatova__info .block_alla_kholmatova__info__name {
+    .block_main_info .block_main_info__info .block_main_info__info__text,
+    .block_main_info .block_main_info__info .block_main_info__info__name {
       font-size: 1.375rem;
       font-weight: 400;
       line-height: 2rem;
       margin: 10px 0 50px 0; }
-    .block_alla_kholmatova .block_alla_kholmatova__info .block_alla_kholmatova__info__name {
+    .block_main_info .block_main_info__info .block_main_info__info__name {
       margin-bottom: 80px; }
-    .block_alla_kholmatova .block_alla_kholmatova__info .block_alla_kholmatova__info__title {
+    .block_main_info .block_main_info__info .block_main_info__info__title {
       font-weight: 700;
       font-size: 3.75rem;
       line-height: 4rem;
       margin: 0 0 35px 0; }
       @media (min-width: 0) and (max-width: 992px) {
-        .block_alla_kholmatova .block_alla_kholmatova__info .block_alla_kholmatova__info__title {
+        .block_main_info .block_main_info__info .block_main_info__info__title {
           font-size: 3.2rem; } }
-    .block_alla_kholmatova .block_alla_kholmatova__info .block_alla_kholmatova__info__cta {
+    .block_main_info .block_main_info__info .block_main_info__info__cta {
       font-size: 1.125rem;
       width: 200px;
       margin-top: 15px;
       padding: 10px; }
       @media (min-width: 0) and (max-width: 640px) {
-        .block_alla_kholmatova .block_alla_kholmatova__info .block_alla_kholmatova__info__cta {
+        .block_main_info .block_main_info__info .block_main_info__info__cta {
           display: block !important;
           margin: auto; } }
 
@@ -953,7 +953,7 @@ button {
     outline: none; }
 
 .button_style1, .main_header .main_header__link_tickets, .main_header .main_header__mobile_menu .dropdown-menu ul li.ticket a:link,
-.main_header .main_header__mobile_menu .dropdown-menu ul li.ticket a:visited, .block_alla_kholmatova .block_alla_kholmatova__info .block_alla_kholmatova__info__cta {
+.main_header .main_header__mobile_menu .dropdown-menu ul li.ticket a:visited, .block_main_info .block_main_info__info .block_main_info__info__cta {
   border: 1px solid white;
   border-radius: 4px;
   background-color: white;
@@ -962,7 +962,7 @@ button {
   font-weight: 700;
   display: inline-block; }
   .button_style1:hover, .main_header .main_header__link_tickets:hover, .main_header .main_header__mobile_menu .dropdown-menu ul li.ticket a:hover:link,
-  .main_header .main_header__mobile_menu .dropdown-menu ul li.ticket a:hover:visited, .block_alla_kholmatova .block_alla_kholmatova__info .block_alla_kholmatova__info__cta:hover {
+  .main_header .main_header__mobile_menu .dropdown-menu ul li.ticket a:hover:visited, .block_main_info .block_main_info__info .block_main_info__info__cta:hover {
     color: white;
     background-color: #E23336; }
 
