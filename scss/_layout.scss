@@ -8,7 +8,6 @@
 // - main_footer
 // - button_cta
 // - block_main_info
-// - block_alla_kholmatova_book
 // - block_workshop
 // - block_tickets
 // - block_image
@@ -258,14 +257,12 @@
 // button_cta
 .button_cta{
     margin:20px 0 20px 0;
-    text-align:center;
     .button_cta__action{
         @extend .button_style2;
         font-size:1.125rem;
         width:200px;
-        height:40px;
         margin-top:15px;
-        padding-top:8px;
+        padding:20px;
         @include smartphone{
             display:block !important;
             margin:auto;
@@ -283,9 +280,9 @@
     padding:30px 0 35px 0;
     .block_main_info__info{
         margin:0;
-        padding:0 0 0 170px;
+        padding:0 0 0 $text_gutter;
         @include desktop{
-            padding-left:35px;
+            padding-left:$text_gutter_mobile;
         }
         @include smartphone{
             padding-left:0;
@@ -296,7 +293,7 @@
             font-size:1.375rem;
             font-weight:400;
             line-height:2rem;
-            margin:10px 0 50px 0;
+            margin:10px 0 35px 0;
         }
         .block_main_info__info__name{
             margin-bottom:80px;
@@ -305,7 +302,7 @@
             font-weight:700;
             font-size:3.75rem;
             line-height:4rem;
-            margin:0 0 35px 0;
+            margin:0 0 25px 0;
             @include tablet{
                 font-size:3.2rem;
             }
@@ -315,7 +312,7 @@
             font-size:1.125rem;
             width:200px;
             margin-top:15px;
-            padding:10px;
+            padding:20px;
             @include smartphone{
                 display:block !important;
                 margin:auto;
@@ -379,66 +376,25 @@
 
 
 
-// block_alla_kholmatova_book
-.block_alla_kholmatova_book{
-    @extend .m-clear_fix;
-    background-color:$white;
-    .block_alla_kholmatova__picture{
-        float:left;
-        width:50%;
-        margin:0;
-        padding:35px;
-        @include tablet{
-            float:none;
-            width:100%;
-            padding-bottom:10px;
-        }
-        img{
-            max-width:100%;
-        }
-    }
-    .block_alla_kholmatova__text{
-        float:right;
-        width:50%;
-        padding:35px;
-        color:$text;
-        @include tablet{
-            float:none;
-            width:100%;
-            padding-top:10px;
-        }
-        p{
-            margin:0.5rem 0 1rem 0;
-        }
-    }
-}
-
-
-
 // block_workshop
 .block_workshop{
-    background:$bg2 url('../img/separator.svg') repeat-x 0 35px;
+    background-color:$white;
     color:$text;
     font-size:1.125rem;
-    padding:85px 65px 35px 65px;
+    padding:75px $text_gutter 35px $text_gutter;
     @include tablet{
-        padding-left:35px;
-        padding-right:35px;
+        padding-left:$text_gutter_mobile;
+        padding-right:$text_gutter_mobile;
     }
-    p{
-        margin:0 0 1.5rem 0;
-        padding:0;
-        line-height:1.5rem;
-    }
-    .block_workshop__ashtag{
-        text-align:center;
-        font-weight:700;
-        font-size:24px;
-        margin-top:20px;
+    .block_workshop__title{
+        @extend .title_style1;
         margin-bottom:50px;
     }
-    .block_workshop__tuned{
-        text-align:center;
+    p{
+        font-size:1.25rem;
+        line-height:2.5rem;
+        margin:0 0 2rem 0;
+        padding:0;
     }
 }
 
