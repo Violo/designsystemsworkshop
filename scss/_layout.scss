@@ -392,7 +392,7 @@
     }
     p{
         font-size:1.25rem;
-        line-height:2.5rem;
+        line-height:2rem;
         margin:0 0 2rem 0;
         padding:0;
     }
@@ -590,21 +590,38 @@
 .block_mention{
     background-color:$white;
     color:$text;
-    padding:35px 35px 35px 35px;
+    padding:75px $text_gutter 85px ($text_gutter - 45px);
+    @include tablet{
+        padding-left:$text_gutter_mobile;
+        padding-right:$text_gutter_mobile;
+    }
     .block_mention__list{
-        width:70%;
-        margin:0 auto 0 auto;
+        @extend .m-clear_fix;
+        margin:0;
         padding:0;
         list-style:none;
         li{
-            text-align:center;
-            font-size:1em;
-            margin:0 0 60px 0;
-            .block_mention__list__name{
-                font-size:0.875rem;
+            float:left;
+            width:46%;
+            @include tablet{
+                float:none;
+                width:100%;
+                margin-bottom:50px;
             }
             &:last-child{
-                margin-bottom:0;
+                float:right;
+            }
+            p{
+                font-size:1.25rem;
+                line-height:2rem;
+                margin:0;
+                padding:0 0 0 45px;
+                &.block_mention__list__text{
+                    background:transparent url('../img/virgolette.svg') no-repeat 0 5px;
+                }
+                &.block_mention__list__name{
+                    font-style:italic;
+                }
             }
         }
     }

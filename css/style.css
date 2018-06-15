@@ -300,11 +300,11 @@ template {
 hr {
   display: none; }
 
-.m-clear_fix:before, .block_main_info:before, .block_image2:before, .workshop_details:before, .block_workshop_info:before, .block_location .block_location__list:before, .m-clear_fix:after, .block_main_info:after, .block_image2:after, .workshop_details:after, .block_workshop_info:after, .block_location .block_location__list:after {
+.m-clear_fix:before, .block_main_info:before, .block_image2:before, .workshop_details:before, .block_mention .block_mention__list:before, .block_workshop_info:before, .block_location .block_location__list:before, .m-clear_fix:after, .block_main_info:after, .block_image2:after, .workshop_details:after, .block_mention .block_mention__list:after, .block_workshop_info:after, .block_location .block_location__list:after {
   content: "";
   display: block;
   overflow: hidden; }
-.m-clear_fix:after, .block_main_info:after, .block_image2:after, .workshop_details:after, .block_workshop_info:after, .block_location .block_location__list:after {
+.m-clear_fix:after, .block_main_info:after, .block_image2:after, .workshop_details:after, .block_mention .block_mention__list:after, .block_workshop_info:after, .block_location .block_location__list:after {
   clear: both; }
 
 .m-clear_floats {
@@ -602,7 +602,7 @@ button {
     margin-bottom: 50px; }
   .block_workshop p {
     font-size: 1.25rem;
-    line-height: 2.5rem;
+    line-height: 2rem;
     margin: 0 0 2rem 0;
     padding: 0; }
 
@@ -749,20 +749,34 @@ button {
 .block_mention {
   background-color: white;
   color: #4A4A4A;
-  padding: 35px 35px 35px 35px; }
+  padding: 75px 170px 85px 125px; }
+  @media (min-width: 0) and (max-width: 992px) {
+    .block_mention {
+      padding-left: 35px;
+      padding-right: 35px; } }
   .block_mention .block_mention__list {
-    width: 70%;
-    margin: 0 auto 0 auto;
+    margin: 0;
     padding: 0;
     list-style: none; }
     .block_mention .block_mention__list li {
-      text-align: center;
-      font-size: 1em;
-      margin: 0 0 60px 0; }
-      .block_mention .block_mention__list li .block_mention__list__name {
-        font-size: 0.875rem; }
+      float: left;
+      width: 46%; }
+      @media (min-width: 0) and (max-width: 992px) {
+        .block_mention .block_mention__list li {
+          float: none;
+          width: 100%;
+          margin-bottom: 50px; } }
       .block_mention .block_mention__list li:last-child {
-        margin-bottom: 0; }
+        float: right; }
+      .block_mention .block_mention__list li p {
+        font-size: 1.25rem;
+        line-height: 2rem;
+        margin: 0;
+        padding: 0 0 0 45px; }
+        .block_mention .block_mention__list li p.block_mention__list__text {
+          background: transparent url("../img/virgolette.svg") no-repeat 0 5px; }
+        .block_mention .block_mention__list li p.block_mention__list__name {
+          font-style: italic; }
 
 .block_workshop_info {
   background-color: white;
