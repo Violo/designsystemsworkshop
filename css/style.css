@@ -781,43 +781,31 @@ button {
 .block_workshop_info {
   background-color: white;
   color: #4A4A4A;
-  padding: 35px 65px 35px 65px; }
+  padding: 75px 170px 35px 170px; }
   @media (min-width: 0) and (max-width: 992px) {
     .block_workshop_info {
       padding-left: 35px;
       padding-right: 35px; } }
   .block_workshop_info .block_workshop_info__title {
-    font-size: 1.125rem;
-    font-weight: normal;
-    text-align: center;
-    margin: 15px 0 40px 0;
-    padding: 0; }
+    margin-bottom: 50px; }
   .block_workshop_info .block_workshop_info__list {
     list-style: none;
-    margin: 0 2% 30px 0;
-    padding: 0; }
+    margin: 0 0 30px -20px;
+    padding: 0;
+    font-size: 1.25rem;
+    line-height: 2rem; }
     @media (min-width: 0) and (max-width: 992px) {
       .block_workshop_info .block_workshop_info__list {
-        width: 100%;
-        float: none;
-        margin-right: 0;
         margin-bottom: 0; } }
-    .block_workshop_info .block_workshop_info__list + .block_workshop_info__list {
-      float: right;
-      margin-right: 0;
-      margin-left: 2%; }
-      @media (min-width: 0) and (max-width: 992px) {
-        .block_workshop_info .block_workshop_info__list + .block_workshop_info__list {
-          float: none;
-          margin-left: 0;
-          margin-bottom: 30px; } }
     .block_workshop_info .block_workshop_info__list li {
       margin-bottom: 3px;
-      background: transparent url("../img/bullet.svg") no-repeat 0 5px;
+      background: transparent url("../img/bullet.svg") no-repeat 0 13px;
       padding-left: 22px; }
   .block_workshop_info .block_workshop_info__text {
     clear: both;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    font-size: 1.25rem;
+    line-height: 2rem; }
 
 .block_location {
   background: white url("../img/separator.svg") repeat-x 0 65px;
@@ -970,7 +958,7 @@ button {
   margin-bottom: 5px;
   padding: 20px; }
 
-.title_style1, .block_workshop .block_workshop__title {
+.title_style1, .block_workshop .block_workshop__title, .block_workshop_info .block_workshop_info__title {
   font-weight: 400;
   font-size: 2.5rem;
   padding: 0; }

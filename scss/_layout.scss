@@ -634,47 +634,35 @@
     @extend .m-clear_fix;
     background-color:$white;
     color:$text;
-    padding:35px 65px 35px 65px;
+    padding:75px $text_gutter 35px $text_gutter;
     @include tablet{
-        padding-left:35px;
-        padding-right:35px;
+        padding-left:$text_gutter_mobile;
+        padding-right:$text_gutter_mobile;
     }
     .block_workshop_info__title{
-        font-size:1.125rem;
-        font-weight:normal;
-        text-align:center;
-        margin:15px 0 40px 0;
-        padding:0;
+        @extend .title_style1;
+        margin-bottom:50px;
     }
     .block_workshop_info__list{
         list-style:none;
-        margin:0 2% 30px 0;
+        margin:0 0 30px -20px;
         padding:0;
+        font-size:1.25rem;
+        line-height:2rem;
         @include tablet{
-            width:100%;
-            float:none;
-            margin-right:0;
             margin-bottom:0;
-        }
-        & + .block_workshop_info__list{
-            float:right;
-            margin-right:0;
-            margin-left:2%;
-            @include tablet{
-                float:none;
-                margin-left:0;
-                margin-bottom:30px;
-            }
         }
         li{
             margin-bottom:3px;
-            background:transparent url('../img/bullet.svg') no-repeat 0 5px;
+            background:transparent url('../img/bullet.svg') no-repeat 0 13px;
             padding-left:22px;
         }
     }
     .block_workshop_info__text{
         clear:both;
         margin-bottom:30px;
+        font-size:1.25rem;
+        line-height:2rem;
     }
 }
 
