@@ -44,7 +44,7 @@
     top:0;
     left:0;
     width:100vw;
-    height:120px;
+    height:$header-height;
     background-color:$bg;
     z-index:2;
     .content_wrapper{
@@ -77,7 +77,7 @@
         padding:0;
         text-align:center;
         @include tablet{
-            right:130px;
+            right:150px;
             text-align:right;
             margin-top:25px;
         }
@@ -108,7 +108,7 @@
         width:120px;
         padding:10px;
         @include tablet{
-            width:80px;
+            width:105px;
         }
         @include tablet-portrait{
             display:none !important;
@@ -117,7 +117,7 @@
     .main_header__mobile_menu{
         display:none;
         float:right;
-        margin-top:5px;
+        margin-top:-5px;
         margin-left:5px;
         @include tablet-portrait{
             display:block;
@@ -278,115 +278,103 @@
 // block_alla_kholmatova
 .block_alla_kholmatova{
     @extend .m-clear_fix;
-    background:transparent url('../img/symbols_bg.svg') no-repeat 0% 0%;
+    background:transparent url('../img/symbols_bg.svg') repeat-y 0% 0%;
     color:$white;
     padding:30px 0 35px 0;
     .block_alla_kholmatova__info{
-        width:65%;
-        float:left;
         margin:0;
-        padding:0 0 0 130px;
+        padding:0 0 0 170px;
         @include desktop{
             padding-left:35px;
         }
         @include smartphone{
             padding-left:0;
-            width:100%;
-            float:none;
             margin-bottom:50px;
         }
         .block_alla_kholmatova__info__text,
-        .block_alla_kholmatova__info__name,
-        .block_alla_kholmatova__ashtag{
+        .block_alla_kholmatova__info__name{
             font-size:1.375rem;
-            font-weight:100;
-            margin:10px 0 10px 0;
+            font-weight:400;
+            line-height:2rem;
+            margin:10px 0 50px 0;
         }
         .block_alla_kholmatova__info__name{
-            margin-bottom:60px;
-        }
-        .block_alla_kholmatova__ashtag{
-            margin-bottom:5px;
-            @include smartphone{
-                text-align:center;
-                margin-bottom:20px;
-            }
+            margin-bottom:80px;
         }
         .block_alla_kholmatova__info__title{
-            font-weight:400;
-            font-size:2.75rem;
-            line-height:3rem;
-            margin:0 0 0 0;
-            span{
-                font-weight:100;
+            font-weight:700;
+            font-size:3.75rem;
+            line-height:4rem;
+            margin:0 0 35px 0;
+            @include tablet{
+                font-size:3.2rem;
             }
         }
         .block_alla_kholmatova__info__cta{
             @extend .button_style1;
             font-size:1.125rem;
             width:200px;
-            height:40px;
             margin-top:15px;
-            padding-top:8px;
+            padding:10px;
             @include smartphone{
                 display:block !important;
                 margin:auto;
             }
         }
     }
-    .block_alla_kholmatova__picture{
-        width:35%;
-        float:right;
-        margin:0;
-        text-align:center;
-        @include smartphone{
-            width:100%;
-            float:none;
-        }
-    }
-    .block_alla_kholmatova__social{
-        list-style:none;
-        text-align:center;
-        margin:15px 0 0 0;
-        padding:0;
-        li{
-            display:inline-block;
-            width:25px;
-            height:25px;
-            margin-left:10px;
-            margin-right:10px;
-            a:link,
-            a:visited{
-                display:block;
-                height:25px;
-                width:25px;
-                background-color:transparent;
-                background-repeat:no-repeat;
-                background-position:50% 50%;
-                span{
-                    display:none;
-                }
-                &:hover,
-                &:active{
-                    -ms-transform: scale(1.3);
-                    -webkit-transform: scale(1.3);
-                    transform: scale(1.3);
-                }
-            }
-            &.m-twitter{
-                a:link,
-                a:visited{
-                    background-image:url('../img/social_ico_twitter.svg');
-                }
-            }
-            &.m-site{
-                a:link,
-                a:visited{
-                    background-image:url('../img/social_ico_site.svg');
-                }
-            }
-        }
-    }
+    // .block_alla_kholmatova__picture{
+    //     width:35%;
+    //     float:right;
+    //     margin:0;
+    //     text-align:center;
+    //     @include smartphone{
+    //         width:100%;
+    //         float:none;
+    //     }
+    // }
+    // .block_alla_kholmatova__social{
+    //     list-style:none;
+    //     text-align:center;
+    //     margin:15px 0 0 0;
+    //     padding:0;
+    //     li{
+    //         display:inline-block;
+    //         width:25px;
+    //         height:25px;
+    //         margin-left:10px;
+    //         margin-right:10px;
+    //         a:link,
+    //         a:visited{
+    //             display:block;
+    //             height:25px;
+    //             width:25px;
+    //             background-color:transparent;
+    //             background-repeat:no-repeat;
+    //             background-position:50% 50%;
+    //             span{
+    //                 display:none;
+    //             }
+    //             &:hover,
+    //             &:active{
+    //                 -ms-transform: scale(1.3);
+    //                 -webkit-transform: scale(1.3);
+    //                 transform: scale(1.3);
+    //             }
+    //         }
+    //         &.m-twitter{
+    //             a:link,
+    //             a:visited{
+    //                 background-image:url('../img/social_ico_twitter.svg');
+    //             }
+    //         }
+    //         &.m-site{
+    //             a:link,
+    //             a:visited{
+    //                 background-image:url('../img/social_ico_site.svg');
+    //             }
+    //         }
+    //     }
+    // }
 }
 
 
