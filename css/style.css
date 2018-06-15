@@ -707,12 +707,14 @@ button {
     width: 100%;
     margin: 30px 0 0 0;
     text-align: left; }
-    @media (min-width: 0) and (max-width: 992px) {
-      .block_tickets .block_tickets__eventbrite_badge iframe {
-        height: 470px; } }
-    @media (min-width: 0) and (max-width: 640px) {
-      .block_tickets .block_tickets__eventbrite_badge iframe {
-        height: 580px; } }
+    .block_tickets .block_tickets__eventbrite_badge iframe {
+      height: 420px; }
+      @media (min-width: 0) and (max-width: 992px) {
+        .block_tickets .block_tickets__eventbrite_badge iframe {
+          height: 520px; } }
+      @media (min-width: 0) and (max-width: 640px) {
+        .block_tickets .block_tickets__eventbrite_badge iframe {
+          height: 600px; } }
   .block_tickets .block_tickets__subscribe_form {
     margin-top: 50px;
     margin-bottom: 100px; }
@@ -1045,6 +1047,12 @@ button {
   height: 48px;
   margin-bottom: 5px;
   padding: 20px; }
+
+.title_style1 {
+  font-family: "mytupi", Helvetica, Arial, sans-serif;
+  font-size: 2,5rem;
+  margin: 0;
+  paddong: 0; }
 
 #mc_embed_signup {
   background: white;
