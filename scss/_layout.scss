@@ -319,59 +319,6 @@
             }
         }
     }
-    // .block_alla_kholmatova__picture{
-    //     width:35%;
-    //     float:right;
-    //     margin:0;
-    //     text-align:center;
-    //     @include smartphone{
-    //         width:100%;
-    //         float:none;
-    //     }
-    // }
-    // .block_alla_kholmatova__social{
-    //     list-style:none;
-    //     text-align:center;
-    //     margin:15px 0 0 0;
-    //     padding:0;
-    //     li{
-    //         display:inline-block;
-    //         width:25px;
-    //         height:25px;
-    //         margin-left:10px;
-    //         margin-right:10px;
-    //         a:link,
-    //         a:visited{
-    //             display:block;
-    //             height:25px;
-    //             width:25px;
-    //             background-color:transparent;
-    //             background-repeat:no-repeat;
-    //             background-position:50% 50%;
-    //             span{
-    //                 display:none;
-    //             }
-    //             &:hover,
-    //             &:active{
-    //                 -ms-transform: scale(1.3);
-    //                 -webkit-transform: scale(1.3);
-    //                 transform: scale(1.3);
-    //             }
-    //         }
-    //         &.m-twitter{
-    //             a:link,
-    //             a:visited{
-    //                 background-image:url('../img/social_ico_twitter.svg');
-    //             }
-    //         }
-    //         &.m-site{
-    //             a:link,
-    //             a:visited{
-    //                 background-image:url('../img/social_ico_site.svg');
-    //             }
-    //         }
-    //     }
-    // }
 }
 
 
@@ -402,16 +349,24 @@
 
 // block_tickets
 .block_tickets{
-    background:$white url('../img/separator.svg') repeat-x 0 35px;
+    background-color:$white;
     color:$text;
     font-size:1.125rem;
-    padding:85px 35px 35px 35px;
+    padding:75px $text_gutter 75px $text_gutter;
+    @include tablet{
+        padding-left:$text_gutter_mobile;
+        padding-right:$text_gutter_mobile;
+    }
+    .block_tickets__title{
+        @extend .title_style1;
+        margin-bottom:50px;
+    }
     .block_tickets__eventbrite_badge{
         width:100%;
         margin:30px 0 0 0;
         text-align:left;
         iframe{
-            height:420px;
+            height:450px;
             @include tablet{
                 height:520px;
             }
@@ -576,6 +531,9 @@
             font-weight:normal;
             margin:0;
             padding:0;
+            @include desktop{
+                font-size:2.5rem;
+            }
         }
         p{
             margin:0;
@@ -667,11 +625,103 @@
 
 
 
+// block_alla_kholmatova
+.block_alla_kholmatova{
+    @extend .m-clear_fix;
+    background-color:$white;
+    color:$text;
+    padding:75px $text_gutter 75px $text_gutter;
+    @include tablet{
+        padding-left:$text_gutter_mobile;
+        padding-right:$text_gutter_mobile;
+    }
+    .block_alla_kholmatova__title{
+        @extend .title_style1;
+        margin-bottom:50px;
+    }
+    .block_alla_kholmatova__picture{
+        width:$block_alla_kholmatova__picture-width;
+        float:left;
+        margin:0;
+        text-align:center;
+        @include tablet-portrait{
+            width:100%;
+            float:none;
+        }
+        .block_alla_kholmatova__social{
+            list-style:none;
+            text-align:center;
+            margin:20px 0 0 0;
+            padding:0;
+            li{
+                display:inline-block;
+                width:25px;
+                height:25px;
+                margin-left:20px;
+                margin-right:20px;
+                a:link,
+                a:visited{
+                    display:block;
+                    height:25px;
+                    width:25px;
+                    background-color:transparent;
+                    background-repeat:no-repeat;
+                    background-position:50% 50%;
+                    span{
+                        display:none;
+                    }
+                    &:hover,
+                    &:active{
+                        -ms-transform: scale(1.3);
+                        -webkit-transform: scale(1.3);
+                        transform: scale(1.3);
+                    }
+                }
+                &.m-twitter{
+                    a:link,
+                    a:visited{
+                        background-image:url('../img/social_ico_twitter.svg');
+                    }
+                }
+                &.m-site{
+                    a:link,
+                    a:visited{
+                        background-image:url('../img/social_ico_site.svg');
+                    }
+                }
+            }
+        }
+    }
+    .block_alla_kholmatova__bio{
+        float:right;
+        width:calc(100% - #{$block_alla_kholmatova__picture-width} - 50px);
+        @include tablet-portrait{
+            width:100%;
+            float:none;
+            margin-top:40px;
+        }
+        p{
+            font-size:1.25rem;
+            line-height:2rem;
+        }
+    }
+}
+
+
+
 // block_location
 .block_location{
-    background:$white url('../img/separator.svg') repeat-x 0 65px;
+    background-color:$white;
     color:$text;
-    padding-top:150px;
+    padding:75px $text_gutter 75px $text_gutter;
+    @include tablet{
+        padding-left:$text_gutter_mobile;
+        padding-right:$text_gutter_mobile;
+    }
+    .block_location__title{
+        @extend .title_style1;
+        margin-bottom:50px;
+    }
     .block_location__picture{
         margin:0 0 30px 0;
         padding:0;
@@ -718,44 +768,40 @@
             }
         }
     }
-    .block_location__title{
-        font-size:1.125rem;
-        font-weight:normal;
-        text-align:center;
-        margin:0;
-        padding:0;
-    }
-    .block_location__list{
-        @extend .m-clear_fix;
-        margin:0;
-        padding:35px 65px 35px 65px;
-        list-style:none;
-        @include tablet{
-            padding-left:35px;
-            padding-right:35px;
+    .block_location__info{
+        .block_location__info__title{
+            margin-bottom:30px;
         }
-        li{
-            width:31%;
-            margin-right:3%;
-            float:left;
-            @include tablet{
-                width:100%;
-                margin-right:0;
-                margin-bottom:50px;
-                float:none;
-            }
-            &:last-child{
-                margin-right:0;
-                float:right;
-            }
-            .block_location__list__title{
-                font-size:1rem;
-                font-weight:700;
-                margin:0 0 3px 0;
-                padding:0;
-            }
-            .block_location__list__text{
-                margin:0;
+        .block_location__info__list{
+            @extend .m-clear_fix;
+            margin:0;
+            padding:0;
+            list-style:none;
+            li{
+                width:30%;
+                margin-right:4%;
+                float:left;
+                @include tablet{
+                    width:100%;
+                    margin-right:0;
+                    margin-bottom:50px;
+                    float:none;
+                }
+                &:last-child{
+                    margin-right:0;
+                }
+                .block_location__info__list__title{
+                    font-weight:700;
+                    margin:0 0 3px 0;
+                    padding:0;
+                    font-size:1.25rem;
+                    line-height:2rem;
+                }
+                .block_location__info__list__text{
+                    margin:0 0 2rem 0;
+                    font-size:1.25rem;
+                    line-height:2rem;
+                }
             }
         }
     }

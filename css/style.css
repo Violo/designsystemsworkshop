@@ -300,11 +300,11 @@ template {
 hr {
   display: none; }
 
-.m-clear_fix:before, .block_main_info:before, .block_image2:before, .workshop_details:before, .block_mention .block_mention__list:before, .block_workshop_info:before, .block_location .block_location__list:before, .m-clear_fix:after, .block_main_info:after, .block_image2:after, .workshop_details:after, .block_mention .block_mention__list:after, .block_workshop_info:after, .block_location .block_location__list:after {
+.m-clear_fix:before, .block_main_info:before, .block_image2:before, .workshop_details:before, .block_mention .block_mention__list:before, .block_workshop_info:before, .block_alla_kholmatova:before, .block_location .block_location__info .block_location__info__list:before, .m-clear_fix:after, .block_main_info:after, .block_image2:after, .workshop_details:after, .block_mention .block_mention__list:after, .block_workshop_info:after, .block_alla_kholmatova:after, .block_location .block_location__info .block_location__info__list:after {
   content: "";
   display: block;
   overflow: hidden; }
-.m-clear_fix:after, .block_main_info:after, .block_image2:after, .workshop_details:after, .block_mention .block_mention__list:after, .block_workshop_info:after, .block_location .block_location__list:after {
+.m-clear_fix:after, .block_main_info:after, .block_image2:after, .workshop_details:after, .block_mention .block_mention__list:after, .block_workshop_info:after, .block_alla_kholmatova:after, .block_location .block_location__info .block_location__info__list:after {
   clear: both; }
 
 .m-clear_floats {
@@ -338,6 +338,9 @@ body {
   line-height: 1.35rem; }
   body strong {
     font-weight: 700; }
+  body em {
+    color: #E23336;
+    font-style: normal; }
 
 a:link,
 a:visited,
@@ -607,16 +610,22 @@ button {
     padding: 0; }
 
 .block_tickets {
-  background: white url("../img/separator.svg") repeat-x 0 35px;
+  background-color: white;
   color: #4A4A4A;
   font-size: 1.125rem;
-  padding: 85px 35px 35px 35px; }
+  padding: 75px 170px 75px 170px; }
+  @media (min-width: 0) and (max-width: 992px) {
+    .block_tickets {
+      padding-left: 35px;
+      padding-right: 35px; } }
+  .block_tickets .block_tickets__title {
+    margin-bottom: 50px; }
   .block_tickets .block_tickets__eventbrite_badge {
     width: 100%;
     margin: 30px 0 0 0;
     text-align: left; }
     .block_tickets .block_tickets__eventbrite_badge iframe {
-      height: 420px; }
+      height: 450px; }
       @media (min-width: 0) and (max-width: 992px) {
         .block_tickets .block_tickets__eventbrite_badge iframe {
           height: 520px; } }
@@ -744,6 +753,9 @@ button {
       font-weight: normal;
       margin: 0;
       padding: 0; }
+      @media (min-width: 0) and (max-width: 1024px) {
+        .workshop_details li .workshop_details__title {
+          font-size: 2.5rem; } }
     .workshop_details li p {
       margin: 0; }
 
@@ -808,10 +820,81 @@ button {
     font-size: 1.25rem;
     line-height: 2rem; }
 
-.block_location {
-  background: white url("../img/separator.svg") repeat-x 0 65px;
+.block_alla_kholmatova {
+  background-color: white;
   color: #4A4A4A;
-  padding-top: 150px; }
+  padding: 75px 170px 75px 170px; }
+  @media (min-width: 0) and (max-width: 992px) {
+    .block_alla_kholmatova {
+      padding-left: 35px;
+      padding-right: 35px; } }
+  .block_alla_kholmatova .block_alla_kholmatova__title {
+    margin-bottom: 50px; }
+  .block_alla_kholmatova .block_alla_kholmatova__picture {
+    width: 210px;
+    float: left;
+    margin: 0;
+    text-align: center; }
+    @media (min-width: 0) and (max-width: 768px) {
+      .block_alla_kholmatova .block_alla_kholmatova__picture {
+        width: 100%;
+        float: none; } }
+    .block_alla_kholmatova .block_alla_kholmatova__picture .block_alla_kholmatova__social {
+      list-style: none;
+      text-align: center;
+      margin: 20px 0 0 0;
+      padding: 0; }
+      .block_alla_kholmatova .block_alla_kholmatova__picture .block_alla_kholmatova__social li {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        margin-left: 20px;
+        margin-right: 20px; }
+        .block_alla_kholmatova .block_alla_kholmatova__picture .block_alla_kholmatova__social li a:link,
+        .block_alla_kholmatova .block_alla_kholmatova__picture .block_alla_kholmatova__social li a:visited {
+          display: block;
+          height: 25px;
+          width: 25px;
+          background-color: transparent;
+          background-repeat: no-repeat;
+          background-position: 50% 50%; }
+          .block_alla_kholmatova .block_alla_kholmatova__picture .block_alla_kholmatova__social li a:link span,
+          .block_alla_kholmatova .block_alla_kholmatova__picture .block_alla_kholmatova__social li a:visited span {
+            display: none; }
+          .block_alla_kholmatova .block_alla_kholmatova__picture .block_alla_kholmatova__social li a:link:hover, .block_alla_kholmatova .block_alla_kholmatova__picture .block_alla_kholmatova__social li a:link:active,
+          .block_alla_kholmatova .block_alla_kholmatova__picture .block_alla_kholmatova__social li a:visited:hover,
+          .block_alla_kholmatova .block_alla_kholmatova__picture .block_alla_kholmatova__social li a:visited:active {
+            -ms-transform: scale(1.3);
+            -webkit-transform: scale(1.3);
+            transform: scale(1.3); }
+        .block_alla_kholmatova .block_alla_kholmatova__picture .block_alla_kholmatova__social li.m-twitter a:link,
+        .block_alla_kholmatova .block_alla_kholmatova__picture .block_alla_kholmatova__social li.m-twitter a:visited {
+          background-image: url("../img/social_ico_twitter.svg"); }
+        .block_alla_kholmatova .block_alla_kholmatova__picture .block_alla_kholmatova__social li.m-site a:link,
+        .block_alla_kholmatova .block_alla_kholmatova__picture .block_alla_kholmatova__social li.m-site a:visited {
+          background-image: url("../img/social_ico_site.svg"); }
+  .block_alla_kholmatova .block_alla_kholmatova__bio {
+    float: right;
+    width: calc(100% - 210px - 50px); }
+    @media (min-width: 0) and (max-width: 768px) {
+      .block_alla_kholmatova .block_alla_kholmatova__bio {
+        width: 100%;
+        float: none;
+        margin-top: 40px; } }
+    .block_alla_kholmatova .block_alla_kholmatova__bio p {
+      font-size: 1.25rem;
+      line-height: 2rem; }
+
+.block_location {
+  background-color: white;
+  color: #4A4A4A;
+  padding: 75px 170px 75px 170px; }
+  @media (min-width: 0) and (max-width: 992px) {
+    .block_location {
+      padding-left: 35px;
+      padding-right: 35px; } }
+  .block_location .block_location__title {
+    margin-bottom: 50px; }
   .block_location .block_location__picture {
     margin: 0 0 30px 0;
     padding: 0;
@@ -850,40 +933,34 @@ button {
         margin-top: 10px;
         width: 60px;
         height: 25px; }
-  .block_location .block_location__title {
-    font-size: 1.125rem;
-    font-weight: normal;
-    text-align: center;
+  .block_location .block_location__info .block_location__info__title {
+    margin-bottom: 30px; }
+  .block_location .block_location__info .block_location__info__list {
     margin: 0;
-    padding: 0; }
-  .block_location .block_location__list {
-    margin: 0;
-    padding: 35px 65px 35px 65px;
+    padding: 0;
     list-style: none; }
-    @media (min-width: 0) and (max-width: 992px) {
-      .block_location .block_location__list {
-        padding-left: 35px;
-        padding-right: 35px; } }
-    .block_location .block_location__list li {
-      width: 31%;
-      margin-right: 3%;
+    .block_location .block_location__info .block_location__info__list li {
+      width: 30%;
+      margin-right: 4%;
       float: left; }
       @media (min-width: 0) and (max-width: 992px) {
-        .block_location .block_location__list li {
+        .block_location .block_location__info .block_location__info__list li {
           width: 100%;
           margin-right: 0;
           margin-bottom: 50px;
           float: none; } }
-      .block_location .block_location__list li:last-child {
-        margin-right: 0;
-        float: right; }
-      .block_location .block_location__list li .block_location__list__title {
-        font-size: 1rem;
+      .block_location .block_location__info .block_location__info__list li:last-child {
+        margin-right: 0; }
+      .block_location .block_location__info .block_location__info__list li .block_location__info__list__title {
         font-weight: 700;
         margin: 0 0 3px 0;
-        padding: 0; }
-      .block_location .block_location__list li .block_location__list__text {
-        margin: 0; }
+        padding: 0;
+        font-size: 1.25rem;
+        line-height: 2rem; }
+      .block_location .block_location__info .block_location__info__list li .block_location__info__list__text {
+        margin: 0 0 2rem 0;
+        font-size: 1.25rem;
+        line-height: 2rem; }
 
 .modal .modal-dialog {
   max-width: 80%; }
@@ -959,7 +1036,7 @@ button {
   margin-bottom: 5px;
   padding: 20px; }
 
-.title_style1, .block_workshop .block_workshop__title, .block_workshop_info .block_workshop_info__title {
+.title_style1, .block_workshop .block_workshop__title, .block_tickets .block_tickets__title, .block_workshop_info .block_workshop_info__title, .block_alla_kholmatova .block_alla_kholmatova__title, .block_location .block_location__title {
   font-weight: 400;
   font-size: 2.5rem;
   padding: 0; }

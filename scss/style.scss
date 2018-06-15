@@ -34,6 +34,7 @@ $m-smartphone-width:640px;
 $s-tablet-width:768px;
 $m-tablet-width:992px;
 $s-desktop-width:1024px;
+$block_alla_kholmatova__picture-width:210px;
 
 @mixin bootstrap {
   @media (min-width: 0) and (max-width: #{$m-bootstrap-width}) {
