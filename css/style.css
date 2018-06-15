@@ -367,6 +367,7 @@ button {
   top: 0;
   left: 0;
   width: 100vw;
+  height: 120px;
   background-color: #E23336;
   z-index: 2; }
   .main_header .content_wrapper {
@@ -378,7 +379,7 @@ button {
         padding-left: 10px;
         padding-right: 10px; } }
   .main_header .logo_evento {
-    margin-top: 12px;
+    margin-top: 35px;
     margin-bottom: 0;
     display: block; }
   .main_header .main_header__date {
@@ -392,28 +393,25 @@ button {
     left: 280px;
     right: 280px;
     list-style: none;
-    margin: 21px 0 0 0;
+    margin: 10px 0 0 0;
     padding: 0;
     text-align: center; }
     @media (min-width: 0) and (max-width: 992px) {
       .main_header .main_header__list_area {
         right: 130px;
         text-align: right;
-        margin-top: 18px; } }
+        margin-top: 25px; } }
     @media (min-width: 0) and (max-width: 768px) {
       .main_header .main_header__list_area {
         display: none; } }
     .main_header .main_header__list_area li {
       display: inline-block;
-      font-size: 0.9375rem;
-      text-transform: uppercase;
       margin-left: 15px;
       margin-right: 15px; }
       @media (min-width: 0) and (max-width: 992px) {
         .main_header .main_header__list_area li {
           margin-left: 5px;
-          margin-right: 5px;
-          font-size: 0.8rem; } }
+          margin-right: 5px; } }
       .main_header .main_header__list_area li a:link,
       .main_header .main_header__list_area li a:visited {
         color: white; }
@@ -423,11 +421,8 @@ button {
           text-decoration: underline; }
   .main_header .main_header__link_tickets {
     float: right;
-    font-size: 0.8125rem;
-    height: 30px;
     width: 120px;
-    margin-top: 15px;
-    padding-top: 4px; }
+    padding: 10px; }
     @media (min-width: 0) and (max-width: 992px) {
       .main_header .main_header__link_tickets {
         width: 80px; } }

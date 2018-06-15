@@ -44,6 +44,7 @@
     top:0;
     left:0;
     width:100vw;
+    height:120px;
     background-color:$bg;
     z-index:2;
     .content_wrapper{
@@ -56,7 +57,7 @@
         }
     }
     .logo_evento{
-        margin-top:12px;
+        margin-top:35px;
         margin-bottom:0;
         display:block;
     }
@@ -72,27 +73,24 @@
         left:240px + $gutter;
         right:240px + $gutter;
         list-style:none;
-        margin:21px 0 0 0;
+        margin:10px 0 0 0;
         padding:0;
         text-align:center;
         @include tablet{
             right:130px;
             text-align:right;
-            margin-top:18px;
+            margin-top:25px;
         }
         @include tablet-portrait{
             display:none;
         }
         li{
             display:inline-block;
-            font-size:0.9375rem;
-            text-transform:uppercase;
             margin-left:15px;
             margin-right:15px;
             @include tablet{
                 margin-left:5px;
                 margin-right:5px;
-                font-size:0.8rem;
             }
             a:link,
             a:visited{
@@ -107,11 +105,8 @@
     .main_header__link_tickets{
         @extend .button_style1;
         float:right;
-        font-size:0.8125rem;
-        height:30px;
         width:120px;
-        margin-top:15px;
-        padding-top:4px;
+        padding:10px;
         @include tablet{
             width:80px;
         }
