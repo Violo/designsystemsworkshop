@@ -11,6 +11,7 @@
 
 // button_style1
 .button_style1{
+    @include transition(.25s);
     border:1px solid $white;
     border-radius:4px;
     background-color:$white;
@@ -19,8 +20,9 @@
     font-weight:700;
     display:inline-block;
     &:hover{
-        color:$white;
-        background-color:$bg;
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
     }
 }
 
@@ -28,6 +30,7 @@
 
 // button_style2
 .button_style2{
+    @include transition(.25s);
     border:1px solid $white;
     border-radius:4px;
     background-color:$bg;
@@ -36,8 +39,9 @@
     font-weight:700;
     display:inline-block;
     &:hover{
-        color:$text_red;
-        background-color:$white;
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
     }
 }
 
@@ -87,13 +91,21 @@
             }
         }
         &.button{
+            @include transition(.25s);
             @extend .button_style2;
             display:block !important;
-            height:36px !important;
-            width:190px !important;
+            height:auto !important;
+            width:auto !important;
             margin:auto !important;
+            padding:10px 50px !important;
             min-width:auto !important;
-            font-size:0.9375rem !important;
+            font-size:1.125rem !important;
+            &:hover{
+                -ms-transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+                background-color:$bg;
+            }
         }
     }
 }

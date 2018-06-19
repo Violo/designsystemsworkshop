@@ -712,6 +712,7 @@ button {
 .workshop_details {
   position: absolute;
   bottom: 30px;
+  width: 100%;
   z-index: 1;
   margin: 0;
   list-style: none;
@@ -884,6 +885,13 @@ button {
     .block_alla_kholmatova .block_alla_kholmatova__bio p {
       font-size: 1.25rem;
       line-height: 2rem; }
+      .block_alla_kholmatova .block_alla_kholmatova__bio p a:link,
+      .block_alla_kholmatova .block_alla_kholmatova__bio p a:visited {
+        color: #E23336; }
+        .block_alla_kholmatova .block_alla_kholmatova__bio p a:link:hover, .block_alla_kholmatova .block_alla_kholmatova__bio p a:link:active,
+        .block_alla_kholmatova .block_alla_kholmatova__bio p a:visited:hover,
+        .block_alla_kholmatova .block_alla_kholmatova__bio p a:visited:active {
+          text-decoration: underline; }
 
 .block_location {
   background-color: white;
@@ -1000,6 +1008,10 @@ button {
 
 .button_style1, .main_header .main_header__link_tickets, .main_header .main_header__mobile_menu .dropdown-menu ul li.ticket a:link,
 .main_header .main_header__mobile_menu .dropdown-menu ul li.ticket a:visited, .block_main_info .block_main_info__info .block_main_info__info__cta {
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  -moz-transition: 0.25s;
   border: 1px solid white;
   border-radius: 4px;
   background-color: white;
@@ -1009,11 +1021,16 @@ button {
   display: inline-block; }
   .button_style1:hover, .main_header .main_header__link_tickets:hover, .main_header .main_header__mobile_menu .dropdown-menu ul li.ticket a:hover:link,
   .main_header .main_header__mobile_menu .dropdown-menu ul li.ticket a:hover:visited, .block_main_info .block_main_info__info .block_main_info__info__cta:hover {
-    color: white;
-    background-color: #E23336; }
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
 
 .button_style2, .button_cta .button_cta__action, .block_location .block_location__picture .block_location__picture__text a:link,
 .block_location .block_location__picture .block_location__picture__text a:visited, .modal .modal-footer button, #mc_embed_signup input.button {
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  -moz-transition: 0.25s;
   border: 1px solid white;
   border-radius: 4px;
   background-color: #E23336;
@@ -1023,8 +1040,9 @@ button {
   display: inline-block; }
   .button_style2:hover, .button_cta .button_cta__action:hover, .block_location .block_location__picture .block_location__picture__text a:hover:link,
   .block_location .block_location__picture .block_location__picture__text a:hover:visited, .modal .modal-footer button:hover, #mc_embed_signup input.button:hover {
-    color: #E23336;
-    background-color: white; }
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
 
 .input_style1, #mc_embed_signup input, #mc_embed_signup input.email {
   border: 1px solid #E3E5EB;
@@ -1058,11 +1076,21 @@ button {
         #mc_embed_signup input.email {
           width: 90% !important; } }
     #mc_embed_signup input.button {
+      transition: 0.25s;
+      -webkit-transition: 0.25s;
+      -o-transition: 0.25s;
+      -moz-transition: 0.25s;
       display: block !important;
-      height: 36px !important;
-      width: 190px !important;
+      height: auto !important;
+      width: auto !important;
       margin: auto !important;
+      padding: 10px 50px !important;
       min-width: auto !important;
-      font-size: 0.9375rem !important; }
+      font-size: 1.125rem !important; }
+      #mc_embed_signup input.button:hover {
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        background-color: #E23336; }
 
 /*# sourceMappingURL=style.css.map */
