@@ -366,12 +366,14 @@
         margin:30px 0 0 0;
         text-align:left;
         iframe{
-            height:450px;
+            height:715px;
+            width:100%;
+            border:none;
             @include tablet{
-                height:520px;
+                height:785px;
             }
             @include smartphone{
-                height:600px;
+                height:900px;
             }
         }
     }

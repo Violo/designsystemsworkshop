@@ -625,13 +625,15 @@ button {
     margin: 30px 0 0 0;
     text-align: left; }
     .block_tickets .block_tickets__eventbrite_badge iframe {
-      height: 450px; }
+      height: 715px;
+      width: 100%;
+      border: none; }
       @media (min-width: 0) and (max-width: 992px) {
         .block_tickets .block_tickets__eventbrite_badge iframe {
-          height: 520px; } }
+          height: 785px; } }
       @media (min-width: 0) and (max-width: 640px) {
         .block_tickets .block_tickets__eventbrite_badge iframe {
-          height: 600px; } }
+          height: 900px; } }
   .block_tickets .block_tickets__subscribe_form {
     margin-top: 50px;
     margin-bottom: 100px; }
