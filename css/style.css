@@ -382,7 +382,7 @@ button {
         padding-left: 10px;
         padding-right: 10px; } }
   .main_header .logo_evento {
-    margin-top: 35px;
+    margin-top: 25px;
     margin-bottom: 0;
     display: block; }
   .main_header .main_header__date {
@@ -396,7 +396,7 @@ button {
     left: 280px;
     right: 280px;
     list-style: none;
-    margin: 10px 0 0 0;
+    margin: 20px 0 0 0;
     padding: 0;
     text-align: center; }
     @media (min-width: 0) and (max-width: 992px) {
@@ -425,6 +425,7 @@ button {
   .main_header .main_header__link_tickets {
     float: right;
     width: 120px;
+    margin-top: 10px;
     padding: 10px; }
     @media (min-width: 0) and (max-width: 992px) {
       .main_header .main_header__link_tickets {
@@ -435,7 +436,7 @@ button {
   .main_header .main_header__mobile_menu {
     display: none;
     float: right;
-    margin-top: -5px;
+    margin-top: 0;
     margin-left: 5px; }
     @media (min-width: 0) and (max-width: 768px) {
       .main_header .main_header__mobile_menu {
@@ -625,15 +626,15 @@ button {
     margin: 30px 0 0 0;
     text-align: left; }
     .block_tickets .block_tickets__eventbrite_badge iframe {
-      height: 715px;
+      height: 510px;
       width: 100%;
       border: none; }
       @media (min-width: 0) and (max-width: 992px) {
         .block_tickets .block_tickets__eventbrite_badge iframe {
-          height: 785px; } }
+          height: 530px; } }
       @media (min-width: 0) and (max-width: 640px) {
         .block_tickets .block_tickets__eventbrite_badge iframe {
-          height: 900px; } }
+          height: 600px; } }
   .block_tickets .block_tickets__subscribe_form {
     margin-top: 50px;
     margin-bottom: 100px; }

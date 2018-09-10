@@ -56,7 +56,7 @@
         }
     }
     .logo_evento{
-        margin-top:35px;
+        margin-top:25px;
         margin-bottom:0;
         display:block;
     }
@@ -72,7 +72,7 @@
         left:240px + $gutter;
         right:240px + $gutter;
         list-style:none;
-        margin:10px 0 0 0;
+        margin:20px 0 0 0;
         padding:0;
         text-align:center;
         @include tablet{
@@ -105,6 +105,7 @@
         @extend .button_style1;
         float:right;
         width:120px;
+        margin-top:10px;
         padding:10px;
         @include tablet{
             width:105px;
@@ -116,7 +117,7 @@
     .main_header__mobile_menu{
         display:none;
         float:right;
-        margin-top:-5px;
+        margin-top:0;
         margin-left:5px;
         @include tablet-portrait{
             display:block;
@@ -366,14 +367,17 @@
         margin:30px 0 0 0;
         text-align:left;
         iframe{
-            height:715px;
+            //height:715px;
+            height:510px;
             width:100%;
             border:none;
             @include tablet{
-                height:785px;
+                //height:785px;
+                height:530px;
             }
             @include smartphone{
-                height:900px;
+                //height:900px;
+                height:600px;
             }
         }
     }
