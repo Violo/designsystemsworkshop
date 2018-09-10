@@ -56,12 +56,12 @@
         }
     }
     .logo_evento{
-        margin-top:25px;
+        margin-top:20px;
         margin-bottom:0;
         display:block;
     }
     .main_header__date{
-        margin:0;
+        margin:5px 0 0 0;
         padding:0;
         color:$text2;
         font-family:$font-stack-regular;
@@ -72,7 +72,7 @@
         left:240px + $gutter;
         right:240px + $gutter;
         list-style:none;
-        margin:20px 0 0 0;
+        margin:25px 0 0 0;
         padding:0;
         text-align:center;
         @include tablet{
@@ -105,7 +105,7 @@
         @extend .button_style1;
         float:right;
         width:120px;
-        margin-top:10px;
+        margin-top:15px;
         padding:10px;
         @include tablet{
             width:105px;
@@ -117,7 +117,7 @@
     .main_header__mobile_menu{
         display:none;
         float:right;
-        margin-top:0;
+        margin-top:5px;
         margin-left:5px;
         @include tablet-portrait{
             display:block;
